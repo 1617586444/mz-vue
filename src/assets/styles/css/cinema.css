@@ -1,0 +1,83 @@
+.header{
+	height:.426rem;
+	border-bottom:1px solid #ededed;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	color: #191a1b;
+}
+.header a{
+	color: #191a1b;
+}
+.cinema-list-name{
+	height:.45rem;
+	border-bottom:1px solid #ededed;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.cinema-list-name a{
+	color: #191a1b;
+}
+.cinema-list{
+	height:auto;
+}
+.cinema-list .cinema-list-item{
+	height:.686rem;
+	padding:.144rem;
+	border-bottom:1px solid #ededed;
+	box-sizing: border-box;
+}
+.cinema-info{
+	width: 2.48rem;
+	height:100%;
+	/*background:red;*/
+}
+.cinema-info-lf{
+	float: left;
+}
+.cinema-info-lf p{
+	float: left;
+	color: #797d82;
+}
+.cinema-info-lf h3{
+	color: #191a1b;
+	margin-bottom:.12rem;
+}
+.cinema-info-rt{
+	width:.62rem;
+	height:100%;
+	float: right;
+	color: #797d82;
+}
+.cinema-info-rt h3{
+	color: #ff5f16;
+	margin-bottom:.1rem;
+	font-size:.12rem;
+}
+.cinema-info-rt h3 span:nth-child(2){
+	font-size:.15rem;
+	margin:0 .02rem;
+}
+/*底部*/
+.footer{
+	height:.443rem;
+	width:100%;
+	position: fixed;
+	bottom:0;
+	left:0;
+	background: #fff;
+	border-top:1px solid #ccc;
+	display: flex;
+	justify-content:space-around;
+	align-items: center;
+}
+.footer a{
+	color: #797d82;
+	display: flex;
+	flex-flow: column;
+	text-align: center;
+}
+.active{
+	color: #ff7b3f !important;
+}

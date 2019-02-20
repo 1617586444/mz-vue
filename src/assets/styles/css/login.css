@@ -1,0 +1,66 @@
+/*网页开始*/
+
+.head{
+	height:.41rem;
+}
+.head>a{
+	line-height:.41rem;
+	display: inline-block;
+	width:.08rem;
+	height:.16rem;
+	color: #000;
+	margin-left:.13rem;
+}
+
+.head>a>img{
+	display: inline-block;
+	width:.08rem;
+	height:.16rem;
+	color: #000;
+}
+.login{
+	height:1.36rem;
+	text-align: center;
+	line-height:1.36rem;
+}
+.login img{
+	width:.54rem;
+	height:.55rem;
+}
+.form{
+	height:2.07rem;
+	padding:0 .33rem;
+}
+#input_txt,#input_pwd{
+	border:0;
+}
+.txt-line{
+	border-bottom:1px solid #ededed;
+}
+#input_txt{
+	width: 2.5rem;
+}
+.form .txt-line input{
+	height:.5rem;
+	font-size:.1rem;
+}
+#yzm{
+	background:#fff;
+	border: 0;
+	color: #bdc0c5;
+}
+input{
+	outline: none;
+}
+input::-webkit-input-placeholder{
+	color: #bdc0c5;
+}
+#sub{
+	width:3.14rem;
+	height:.4rem;
+	background: #ff5f16;
+	color: #ff8f5c;
+	border:0 ;
+	border-radius:10px ;
+	font-size: .12rem;
+}

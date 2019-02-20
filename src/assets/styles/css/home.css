@@ -1,0 +1,96 @@
+.header {
+	height: 1.22rem;
+	width: 100%;
+	background: url(../images/wd_header.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.avatar {
+	height: .6rem;
+	padding: .3rem 0;
+	padding-left: .18rem;
+}
+
+.avatar img {
+	width: .6rem;
+	height: .6rem;
+	border-radius: 50%;
+	margin-right: .19rem;
+	border: 2px solid #fff;
+	float: left;
+}
+
+.nick-name {
+	float: left;
+	line-height:.6rem;
+	color: #fffcfb;
+	font-weight:900;
+}
+/*选项卡*/
+.my-order-tab{
+	height:.723rem;
+	display: flex;
+	justify-content: space-around;
+	align-items:center;
+}
+.my-order-tab a{
+	display: flex;	
+	text-align: center;
+	flex-flow: column;
+	color: #92969c;
+}
+.my-order-tab a i{
+	margin-bottom:.12rem;
+}
+/*主体内容区*/
+.main{
+	height:4.5rem;
+	background: #f4f4f4;
+}
+.margin-set{
+	padding-left:.13rem;
+	width:3.61rem;
+	float: left;
+	background: #fff;
+	margin-top:.09rem;
+}
+.my-card{
+	height:.4433rem;
+	border-bottom:1px solid #ccc;
+	line-height:.4433rem;
+}
+.yjt{
+	color: #000;
+	margin-right:.11rem;
+	float: right;
+}
+.perve{
+	float: right; 
+	margin-right:.11rem;
+	font-size:.15rem;
+}
+.my-card span{
+	margin-left:.15rem;
+}
+/*底部*/
+.footer{
+	height:.443rem;
+	width:100%;
+	position: fixed;
+	bottom:0; 
+	left:0;
+	background: #fff;
+	border-top:1px solid #ccc;
+	display: flex;
+	justify-content:space-around;
+	align-items: center;
+}
+.footer a{
+	color: #797d82;
+	display: flex;
+	flex-flow: column;
+	text-align: center;
+}
+.active{
+	color: #ff7b3f !important;
+}

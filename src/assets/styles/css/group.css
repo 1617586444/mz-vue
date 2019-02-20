@@ -1,0 +1,112 @@
+.groupitem-ul{
+	height:auto;
+}
+.groupitem{
+	height:3.05rem;
+	width:100%;
+	
+}
+.itrm-img{
+	height:1.993rem;
+	width: 100%;
+}
+
+.itrm-img img{
+	height:1.993rem;
+	width: 100%;
+}
+.itrm-info{
+	height: 1.04rem;
+	width: 100%;
+	padding: .133rem .133rem .133rem;
+	box-sizing: border-box;
+}
+.item-text h3{
+	margin-bottom:.09rem;
+	color: #000;
+}
+.item-text p{
+	color: #797d82;
+	font-size:.1rem;
+}
+.item-price{
+	height:.3rem;
+	width:2.8rem;
+	float: left;
+}
+.current-price{
+	float: left;
+}
+.current-price span{
+	line-height:.3rem;
+	float: left;
+	color: #c03131;
+	font-size:.13rem;
+}
+.avatar{
+	width:.466rem;
+	height:.3rem;
+	float: right;
+	position: relative;
+	line-height:.3rem;
+}
+.span1{
+	position: absolute;
+	left:0;
+	top:0;
+}
+.span2{
+	position: absolute;
+	right: 0;
+	top:0;
+}
+.avatar span{
+	width:.28rem;
+	height: .28rem
+	line-height:.3rem;
+	border-radius:50%;
+	display: inline-block;
+}
+.avatar span img{
+	width:.28rem;
+	height: .28rem;
+	border-radius:50%;
+	display: inline-block;
+}
+.item-button{
+	width: .62rem;
+	height:.306rem;
+	background:#c03131;
+	float: right;
+	border-radius: .05rem;
+	color: #fff;
+	text-align: center;
+	line-height:.306rem;
+}
+.bar{
+	height: .09rem;
+	background:#f4f4f4;
+	width:100%;
+}
+/*底部*/
+.footer{
+	height:.443rem;
+	width:100%;
+	position: fixed;
+	bottom:0;
+	left:0;
+	background: #fff;
+	border-top:1px solid #ccc;
+	display: flex;
+	justify-content:space-around;
+	align-items: center;
+}
+.footer a{
+	color: #797d82;
+	display: flex;
+	flex-flow: column;
+	text-align: center;
+}
+.active{
+	color: #ff7b3f !important;
+}

@@ -1,0 +1,114 @@
+.header{
+  height: 0.393rem;
+  width:100%;
+  box-shadow:1px 1px 10px #ccc;
+  line-height:.393rem;
+  position:fixed;
+  top: 0;
+  left: 0;
+  z-index:6;
+}
+.icon-span{
+  float: left;
+  margin-left:0.106rem;
+}
+.address{
+  float: left;
+  margin-left:1.04rem;
+}
+body,html{
+  overflow: hidden;
+}
+/*头部搜索 */
+.search{
+  height:.456rem;
+  background: #f4f4f4;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  position: fixed;
+  top:0.393rem;
+  left: 0;
+}
+.icon-fangdajing{
+  position: absolute;
+  left:.233rem;
+  top:.15rem;
+}
+.txt{
+  padding-left:.32rem;
+  width:3.33rem;
+  height:.28rem;
+  margin-top:.09rem;
+  border-radius:6px;
+  outline: none;
+  border: none;
+  margin-left:.186rem;
+  box-sizing: border-box;
+}
+.your-city{
+  margin-top:.849rem ;
+  height:.65rem;
+  padding-left: .2rem;
+}
+.your-city p{
+  height: .366rem;
+  line-height:.366rem;
+}
+.your-city span{
+  display: inline-block;
+  height: .276rem;
+  width: .766rem;
+  line-height:.276rem;
+  text-align: center;
+  background: #f4f4f4;
+  border-radius: 8px;
+  margin-left:.08rem;
+}
+.hot-city{
+  padding-left:.2rem;
+  height:1.23rem;
+
+}
+.hot-city p{
+  height:.4rem;
+  line-height: .4rem;
+}
+.hot-ul{
+  padding-left: .08rem;
+  
+}
+.hot-ul li{
+  float: left;
+  height: .276rem;
+  width: .766rem;
+  line-height:.276rem;
+  text-align: center;
+  background: #f4f4f4;
+  border-radius: 8px;
+  margin-right:.333rem;
+  margin-bottom:.133rem;
+}
+.city-list{
+  height:.273rem;
+  background: #f4f4f4;
+  width: 100%;
+  padding-left: .2rem;
+  line-height:.273rem ;
+}
+.main{
+  width:3.45rem;
+  float: left;
+}
+.city-list li{
+  width:3.29rem;
+  float: right;
+  border-bottom: 1px solid #ededed;
+  height: .433rem;
+  line-height:.433rem;
+}
+.city-list li span{
+  width:0.96rem;
+  display: inline-block;  
+  text-align: center;
+}
