@@ -5,6 +5,12 @@ import Cinema from './views/Cinema.vue';
 import Center from './views/Center.vue';
 import City from './views/City.vue';
 import Home from './views/Home.vue';
+import Login from './views/Login.vue';
+import Card from './views/Card.vue';
+import Money from './views/Money.vue';
+import System from './views/System.vue';
+import nprogress from 'nprogress';
+import 'nprogress/nprogress.css';
 
 // 这个 router.js 就是vue-router 的配置文件
 /*
@@ -60,31 +66,72 @@ let router = new VueRouter({
       ]
     },
     {
+      // 城市选择页
       path: '/city',
       component: City
+    },
+    {
+      path: '/login',
+      component: Login
     },
     // 设置一个通配符的一级路由，当url地址无法与上面的规则匹配的时候就会跟我匹配
     {
       path: '*',
       redirect: '/films'
+    },
+    {
+      path: '/card',
+      component: Card
+    },
+    {
+      path: '/money',
+      component: Money
+    },
+    {
+      path: '/system',
+      component: System
     }
-    /* {
-      path: '/films',
-      component: Film
-    },
-    {
-      path: '/cinemas',
-      component: Cinema
-    },
-    {
-      path: '/center',
-      component: Center
-    },
-    {
-      path: '/city',
-      component: City
-    } */
   ]
+})
+
+// 导航守卫 全局前置守卫
+/*
+  路由守卫中
+  a -> b
+  to 将要去的路由的路由对象 b
+  from 从哪里去的路由对象   a
+  next 是否允许去
+
+  a -> b 如果不想去 next(false)  或者不使用 next()
+  a -> b 如果想去 next()
+  如果不允许跳转，并且想去到指定页面  next('/xxxx')
+*/
+router.beforeEach((to, from, next) => {
+  // nprogress.start()
+  nprogress.start()
+  let nickname = sessionStorage.getItem('nickname');
+  let list = ['/card', '/money', '/system']
+
+  if (list.indexOf(to.path) > -1 && !nickname) {
+    // 阻止
+    // next(false)
+    // next('/login'); 字符串模式
+    next({
+      path: '/Login',
+      query: {
+        redirect: to.fullPath
+      }
+    })
+  } else {
+    next()
+  }
+})
+
+// 全局后置守卫
+
+router.afterEach((to, from) => {
+  // 完成nprogress.done()
+  nprogress.done();
 })
 
 export default router;
