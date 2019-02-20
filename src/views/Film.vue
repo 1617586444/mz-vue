@@ -2,6 +2,13 @@
   <div>
     <MzBanner></MzBanner>
     <MzTabs></MzTabs>
+    <ul>
+      <router-link tag="li" to="/detail/100">浏览地球</router-link>
+      <router-link tag="li" to="/detail/200">飞驰人数</router-link>
+      <router-link tag="li" to="/detail/300">西游记</router-link>
+    </ul>
+
+    <div style="height:2002px;"></div>
   </div>
 </template>
 
