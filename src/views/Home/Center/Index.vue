@@ -2,7 +2,7 @@
   <div>
     <div class="center-header">
       <div class="avatar">
-        <img src="../assets/images/tou.png">
+        <img src="@/assets/images/tou.png">
         <span class="nick-name" @click="handLogin">立即登录</span>
       </div>
     </div>
@@ -51,7 +51,7 @@ export default {
 <style lang="less" scope>
 .center-header {
   height: 170px;
-  background: url(../assets/images/wd_header.png) no-repeat;
+  background: url(../../../assets/images/wd_header.png) no-repeat;
   background-size: 100% 100%;
 }
 .avatar {

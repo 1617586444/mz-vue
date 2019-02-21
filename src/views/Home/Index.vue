@@ -9,7 +9,7 @@
 
 <script>
 
-import MzFooter from '../components/MzFooter/Index.vue';
+import MzFooter from '@/components/MzFooter/Index.vue';
 
 export default {
   components: {

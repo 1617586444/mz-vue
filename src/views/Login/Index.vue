@@ -5,7 +5,7 @@
     <button @click="handleLogin">登录</button>-->
     <!--主体内容区-->
     <div class="login">
-      <img src="../assets/images/ico_04.jpg">
+      <img src="@/assets/images/ico_04.jpg">
     </div>
     <div class="form">
       <p class="txt-line">

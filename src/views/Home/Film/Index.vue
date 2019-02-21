@@ -42,9 +42,9 @@
 </template>
 
 <script>
-import MzBanner from "../components/MzBanner/Index";
-import MzTabs from "../components/MzTabs/Index";
-import axios from "axios";
+import MzBanner from '@/components/MzBanner/Index';
+import MzTabs from '@/components/MzTabs/Index';
+import axios from 'axios';
 
 export default {
   // 局部注册组件
@@ -52,16 +52,16 @@ export default {
     MzBanner,
     MzTabs
   },
-  data() {
+  data () {
     return {
       // 影片信息数据
       FilmList: []
     };
   },
   // 调用
-  created() {
+  created () {
     axios
-      .get("http://localhost:3000/film/search", {
+      .get('http://localhost:3000/film/search', {
         params: {
           pageSize: 10
         }

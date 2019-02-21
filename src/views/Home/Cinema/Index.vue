@@ -44,17 +44,17 @@
 </template>
 
 <script>
-import axios from "axios";
+import axios from 'axios';
 export default {
-  data() {
+  data () {
     // 定义装载数据列表
     return {
       addressList: []
     };
   },
-  created() {
+  created () {
     axios
-      .get("http://localhost:3000/cinema/search", {
+      .get('http://localhost:3000/cinema/search', {
         params: {
           pageSize: 10
         }

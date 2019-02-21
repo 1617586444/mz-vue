@@ -31,22 +31,22 @@ let router = new VueRouter({
   routes: [ // !!!routes 没有r 不是routers
     {
       path: '/',
-      component: () => import(/* webpackChunkName: "Home" */ './views/Home.vue'),
+      component: () => import(/* webpackChunkName: "Home" */ './views/Home/Index.vue'),
       children: [
         // 不是一级路由的话 path 路径前面不要加/
         // PS: 二级路由或者二级以上的路由。他们的url地址，是会从一级路由开始一直做追加的
         // localhost:8080/#、home/films -> City.vue
         {
           path: 'films',
-          component: () => import(/* webpackChunkName: "Film" */ './views/Film.vue')
+          component: () => import(/* webpackChunkName: "Film" */ './views/Home/Film/Index.vue')
         },
         {
           path: 'cinemas',
-          component: () => import(/* webpackChunkName: "cinema" */ './views/Cinema.vue')
+          component: () => import(/* webpackChunkName: "cinema" */ './views/Home/Cinema/Index.vue')
         },
         {
           path: 'center',
-          component: () => import(/* webpackChunkName: "center" */ './views/Center.vue')
+          component: () => import(/* webpackChunkName: "center" */ './views/Home/Center/Index.vue')
         },
         // 空的儿子
         // http://localhost:8080/#/
@@ -62,29 +62,29 @@ let router = new VueRouter({
     {
       // 城市选择页
       path: '/city',
-      component: () => import(/* webpackChunkName: "city" */ './views/City/City.vue')
+      component: () => import(/* webpackChunkName: "city" */ './views/City/Index.vue')
     },
     {
       // 登录
       path: '/login',
-      component: () => import(/* webpackChunkName: "login" */ './views/Login.vue')
+      component: () => import(/* webpackChunkName: "login" */ './views/Login/Index.vue')
     },
     {
       path: '/detail/:id',
-      component: () => import(/* webpackChunkName: "detail" */ './views/Detail.vue'),
+      component: () => import(/* webpackChunkName: "detail" */ './views/Detail/Index.vue'),
       props: true
     },
     {
       path: '/card',
-      component: () => import(/* webpackChunkName: "card" */ './views/Card.vue')
+      component: () => import(/* webpackChunkName: "card" */ './views/Card/Index.vue')
     },
     {
       path: '/money',
-      component: () => import(/* webpackChunkName: "money" */ './views/Money.vue')
+      component: () => import(/* webpackChunkName: "money" */ './views/Money/Index.vue')
     },
     {
       path: '/system',
-      component: () => import(/* webpackChunkName: "system" */ './views/System.vue')
+      component: () => import(/* webpackChunkName: "system" */ './views/System/Index.vue')
     },
     // 设置一个通配符的一级路由，当url地址无法与上面的规则匹配的时候就会跟我匹配
     {

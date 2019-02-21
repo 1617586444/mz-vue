@@ -80,8 +80,8 @@
 </template>
 
 <script>
-  import axios from 'axios';
-  import MzHeader from '../../components/MzHeader/Index';
+import axios from 'axios';
+import MzHeader from '../../components/MzHeader/Index';
 export default {
   components: {
     MzHeader
@@ -104,12 +104,12 @@ export default {
 
       this.cityData.forEach(item => {
         // 1. 得到当前城市的数字母
-        let firstLetter = item.pinyin.substr(0,1).toUpperCase();
+        let firstLetter = item.pinyin.substr(0, 1).toUpperCase();
         // 判断当前城市 首字母是循环过程中第一次出现的还是多次出现。
-        if(hash[firstLetter]) {
+        if (hash[firstLetter]) {
           // 存在
-        let index = hash[firstLetter] -1;
-        res[index].list.push(item)
+          let index = hash[firstLetter] - 1;
+          res[index].list.push(item)
         } else {
           // 不存在
           hash[firstLetter] = ++i;
@@ -120,10 +120,10 @@ export default {
         }
         // 存在
       })
-          let temp = res.sort((a, b) => {
-            return a.py.charCodeAt() - b.py.charCodeAt();
-          })
-          return temp;
+      let temp = res.sort((a, b) => {
+        return a.py.charCodeAt() - b.py.charCodeAt();
+      })
+      return temp;
     },
     /*
       右侧显示的字母的数据
@@ -140,9 +140,9 @@ export default {
       获取城市列表数据
      */
     getCityData () {
-      axios.get('./json/city.json').then( response => {
+      axios.get('./json/city.json').then(response => {
         let res = response.data;
-        if( res.status === 0 ) {
+        if (res.status === 0) {
           // 成功
           // res.data.cities
           this.cityData = res.data.cities;
@@ -157,15 +157,15 @@ export default {
       右侧字母点击
       @param { string }  py点击的字母
     */
-   Top (py) {
+    Top (py) {
     //  得到左侧的到距离顶部的距离
     // console.log(document.getElementById(py));
-    let el = document.getElementById(py);
+      let el = document.getElementById(py);
       // 得到， el
       // console.log(el.offsetTop);
       // 2. 操作页面滚动条滚动
       document.getElementById('lv-indexlist__content').scrollTop = el.offsetTop
-   }
+    }
   },
   created () {
     this.getCityData()
