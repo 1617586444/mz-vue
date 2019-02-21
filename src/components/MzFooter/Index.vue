@@ -6,9 +6,6 @@
     <router-link to="/cinemas">
       <i class="iconfont icon-yingyuana"></i>影院
     </router-link>
-    <router-link to="/shuop">
-      <i class="iconfont icon-pintuandingdan"></i>9.9拼团
-    </router-link>
     <router-link to="/center">
       <i class="iconfont icon-wd"></i>我的
     </router-link>

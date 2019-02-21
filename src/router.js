@@ -1,15 +1,5 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-// import Film from './views/Film.vue';
-// import Cinema from './views/Cinema.vue';
-// import Center from './views/Center.vue';
-// import City from './views/City.vue';
-// import Home from './views/Home.vue';
-// import Login from './views/Login.vue';
-// import Card from './views/Card.vue';
-// import Money from './views/Money.vue';
-// import System from './views/System.vue';
-// import Detail from './views/Detail.vue';
 import nprogress from 'nprogress';
 import 'nprogress/nprogress.css';
 
@@ -72,7 +62,7 @@ let router = new VueRouter({
     {
       // 城市选择页
       path: '/city',
-      component: () => import(/* webpackChunkName: "city" */ './views/City.vue')
+      component: () => import(/* webpackChunkName: "city" */ './views/City/City.vue')
     },
     {
       // 登录
