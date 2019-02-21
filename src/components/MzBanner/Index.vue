@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="addr" @click="goTo">深圳<i class="iconfont icon-xjt" style="font-size:10px;margin-left:5px;"></i></div>
+    <div class="addr" @click="goTo">{{curCityName}}<i class="iconfont icon-xjt" style="font-size:10px;margin-left:5px;"></i></div>
     <div class="swiper-container">
       <div class="swiper-wrapper">
         <div class="swiper-slide" v-for="item in bannerList" :key="item._id">
@@ -26,7 +26,11 @@ export default {
       mySwiper: null
     };
   },
-
+  computed: {
+    curCityName () {
+      return this.$store.state.curCityName;
+    }
+  },
   methods: {
     initSeiper () {
       // 对某个代码不校验 eslint 的规则

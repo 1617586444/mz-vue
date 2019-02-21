@@ -34,7 +34,7 @@
 
 <template>
   <div class="mz-city">
-    <MzHeader title="当前城市-">{{ filterCityData }}</MzHeader>
+    <MzHeader :title="'当前城市-'+ curCityName">{{ filterCityData }}</MzHeader>
     <div class="lv-indexlist">
       <ul class="lv-indexlist__content" id="lv-indexlist__content">
         <div class="recommend-city">
@@ -66,7 +66,10 @@
         >
           <p class="lv-indexsection__index">{{ item.py }}</p>
           <ul>
-            <li v-for="city in item.list" :key="city.cityId">{{ city.name }}</li>
+            <li v-for="city in item.list"
+            :key="city.cityId"
+            @click="changeCity(city)"
+            >{{ city.name }}</li>
           </ul>
         </li>
       </ul>
@@ -88,51 +91,28 @@ export default {
   },
   data () {
     return {
+      // curCityName: '深圳', 自身数据不要，二十用仓库的数据 curCtityName
       // 获取城市列表
-      cityData: []
+      // cityData: []
     }
   },
 
   computed: {
-    /*
-      处理后的城市数据
-    */
-    filterCityData () {
-      let hash = {};
-      let i = 0;
-      let res = [];
-
-      this.cityData.forEach(item => {
-        // 1. 得到当前城市的数字母
-        let firstLetter = item.pinyin.substr(0, 1).toUpperCase();
-        // 判断当前城市 首字母是循环过程中第一次出现的还是多次出现。
-        if (hash[firstLetter]) {
-          // 存在
-          let index = hash[firstLetter] - 1;
-          res[index].list.push(item)
-        } else {
-          // 不存在
-          hash[firstLetter] = ++i;
-          let obj = {};
-          obj.py = firstLetter;
-          obj.list = [item];
-          res.push(obj)
-        }
-        // 存在
-      })
-      let temp = res.sort((a, b) => {
-        return a.py.charCodeAt() - b.py.charCodeAt();
-      })
-      return temp;
+    cityData () {
+      return this.$store.state.cityData
     },
-    /*
-      右侧显示的字母的数据
-    */
+
+    filterCityData () {
+      return this.$store.getters.filterCityData;
+    },
+
     filterLetters () {
-      return this.filterCityData.map(item => {
-        return item.py;
-      })
+      return this.$store.getters.filterLetters;
+    },
+    curCityName () {
+      return this.$store.state.curCityName;
     }
+
   },
 
   methods: {
@@ -144,8 +124,8 @@ export default {
         let res = response.data;
         if (res.status === 0) {
           // 成功
-          // res.data.cities
-          this.cityData = res.data.cities;
+          // this.cityData = res.data.cities;
+          this.$store.commit('chgCityData', res.data.cities);
         } else {
           // 失败
           alert(res.msg)
@@ -159,12 +139,22 @@ export default {
     */
     Top (py) {
     //  得到左侧的到距离顶部的距离
-    // console.log(document.getElementById(py));
       let el = document.getElementById(py);
       // 得到， el
-      // console.log(el.offsetTop);
       // 2. 操作页面滚动条滚动
       document.getElementById('lv-indexlist__content').scrollTop = el.offsetTop
+    },
+    /*
+      切换城市
+    */
+    changeCity (city) {
+      // this.curCityName = city.name;
+      // this.$store.state.curCityName = city.name  不能这么用
+      // this.$store.commit('chgCityName',city.name)
+      this.$store.commit('chgCityName', {
+        name: city.name,
+        age: 18
+      })
     }
   },
   created () {
