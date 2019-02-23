@@ -1,7 +1,11 @@
 // 仓库文件
 import Vue from 'vue';
 import Vuex from 'vuex';
+import axios from 'axios';
 
+import a from './modules/a.js';
+import b from './modules/b.js';
+import c from './modules/c.js';
 Vue.use(Vuex);
 
 // 创建仓库
@@ -11,9 +15,10 @@ let store = new Vuex.Store({
   // 状态 - 放项目中需要的数据(需要多个组件之间使用的数据)
   state: {
     // 当前定位or切换的城市名称
-    curCityName: '深圳',
+    curCityName: '',
     // 城市列表数据
-    cityData: []
+    cityData: [],
+    nickName: ''
   },
 
   getters: {
@@ -57,6 +62,11 @@ let store = new Vuex.Store({
   },
 
   mutations: {
+
+    chgNickName (state, payload) {
+      state.nickName = payload;
+    },
+
     // key:value
     /*
       修改 curCityName
@@ -73,7 +83,48 @@ let store = new Vuex.Store({
     chgCityData (state, payload) {
       state.cityData = payload
     }
+  },
+
+  actions: {
+    /*
+      调用 百度api 获取当前的城市名称
+    */
+    getCityName ({ commit }) {
+      /* eslint-disable */
+      var myCity = new BMap.LocalCity();
+      myCity.get( (result) => {
+        commit('chgCityName', {
+          name: result.name
+        })
+      })
+    },
+    /*
+    获取城市列表数据
+    */
+    getCityData ({ commit, state, getters}) {
+      axios.get('./json/city.json').then(response => {
+        let res = response.data;
+        if (res.status === 0) {
+          // 成功
+          // this.cityData = res.data.cities;
+          // this.$store.commit('chgCityData', res.data.cities);
+          // this.chgCityData(res.data.cities)
+          commit('chgCityData', res.data.cities)
+        } else {
+          // 失败
+          alert(res.msg)
+        }
+        // console.log(res);
+      })
+    },
+  },
+  modules: {
+    ma: a,
+    mb: b,
+    mc: c
   }
+
+  // namespaced: true  如果使用了modules 推荐大家都使用命名空间
 })
 
 export default store;

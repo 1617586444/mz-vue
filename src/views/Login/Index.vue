@@ -47,12 +47,11 @@ export default {
             // this.$router.push('/card')
             // 跳转到用户想去的页面
             this.$router.replace({
-              path: this.$route.query.redirect
+              path: this.$route.query.redirect || '/center'
             });
           } else {
             alert(data.msg);
           }
-          console.log(data);
         });
     }
   }

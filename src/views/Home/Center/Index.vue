@@ -2,8 +2,8 @@
   <div>
     <div class="center-header">
       <div class="avatar">
-        <img src="@/assets/images/tou.png">
-        <span class="nick-name" @click="handLogin">立即登录</span>
+        <img :src="strImg2">
+        <span class="nick-name" @click="handLogin">{{ nickName ? nickName : info}}</span>
       </div>
     </div>
     <div class="my-order-tab">
@@ -20,18 +20,18 @@
         <router-link tag="p" to="/card" class="my-card">
           <i class="iconfont icon-qiaquan"></i>
           <span>卖座卡</span>
-          <span class="yjt">></span>
+          <span class="yjt"><i class="iconfont icon-iconfontjiantou5"></i></span>
         </router-link>
         <router-link tag="p" to="/money" class="my-card">
           <i class="iconfont icon-yue"></i>
           <span>余额</span>
-          <span class="yjt">></span>
-          <span class="perve">￥0.00</span>
+          <span class="yjt"><i class="iconfont icon-iconfontjiantou5"></i></span>
+          <span class="perve">￥{{ initMoney }}.00</span>
         </router-link>
         <router-link tag="p" to="/system" class="my-card">
           <i class="iconfont icon-shezhi"></i>
           <span>设置</span>
-          <span class="yjt">></span>
+          <span class="yjt"><i class="iconfont icon-iconfontjiantou5"></i></span>
         </router-link>
       </div>
     </div>
@@ -40,9 +40,30 @@
 
 <script>
 export default {
+  data () {
+    return {
+      initMoney: '0',
+      money: '10000',
+      info: '立即登录',
+      nickName: sessionStorage.getItem('nickname'),
+      strImg2: 'https://ss0.baidu.com/73x1bjeh1BF3odCf/it/u=341815867,4121040157&fm=85&s=C6DA7D88862332AC7CA059060100E0C1'
+    }
+  },
+  mounted () {
+    if (this.nickName) {
+      this.strImg2 = 'https://ss0.baidu.com/73x1bjeh1BF3odCf/it/u=341815867,4121040157&fm=85&s=C6DA7D88862332AC7CA059060100E0C1';
+      this.initMoney = '10000';
+    } else {
+      this.strImg2 = 'https://mall.s.maizuo.com/bd6d9303e481f78fcdcee3f4a295f9b9.jpg';
+    }
+  },
   methods: {
     handLogin () {
-      this.$router.push('/login')
+      if (this.nickName) {
+        this.$router.push('/system');
+      } else {
+        this.$router.push('/login');
+      }
     }
   }
 };
@@ -63,7 +84,7 @@ export default {
     width: 67px;
     height: 67px;
     border-radius: 50%;
-    margin-right: 57px;
+    margin-right: 34px;
     border: 2px solid #fff;
     float: left;
   }
@@ -94,11 +115,10 @@ export default {
 }
 /*主体内容区*/
 .mz-main {
-  height: 370px;
+  height: 376px;
   background: #f4f4f4;
 }
 .margin-set {
-  padding-left: 0.13rem;
   width: 100%;
   float: left;
   background: #fff;

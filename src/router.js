@@ -2,7 +2,6 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import nprogress from 'nprogress';
 import 'nprogress/nprogress.css';
-
 // 这个 router.js 就是vue-router 的配置文件
 /*
   1. 引入vue
@@ -108,10 +107,9 @@ let router = new VueRouter({
 */
 router.beforeEach((to, from, next) => {
   // nprogress.start()
-  nprogress.start()
+  nprogress.start();
   let nickname = sessionStorage.getItem('nickname');
-  let list = ['/card', '/money', '/system']
-
+  let list = ['/card', '/money', '/system'];
   if (list.indexOf(to.path) > -1 && !nickname) {
     // 阻止
     // next(false)

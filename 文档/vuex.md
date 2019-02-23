@@ -40,3 +40,53 @@ computed : {
   组件中： (需要提交 chgCityName 这个 mutation)
 
    this.$store.commit('chgCityName')
+
+
+#
+
+this.$store.state.xxx 用起来不方便 vuex 提供有 mapState() 这个辅助函数供我们去调用
+
+this.$store.getters.xxx----- vuex 提供 mapGetters()
+
+this.$store.commit('xxx') --- vue mapMutations()
+
+## 辅助函数的使用
+
+
+1. 哪里要用哪里就先要引入,
+
+
+
+## mapSate
+
+1. 返回的是一个对象
+
+  Vuex.mapState([
+    'cityData',             =>
+    'curCityName'
+  ]),
+
+      {
+        cityData () {
+          return this.$store.state.cityData
+        },
+        curCityName () {
+          return this.$store.state.curCityName
+        },
+      }
+
+-------
+
+Vuex.mapState({
+  cityData: (state) => state.cityData
+  curCityName: 'curCityName'          =>
+})
+  {
+    cityData () {
+      return this.$store.state.cityDate
+    },
+
+    curCityName () {
+      return this.$store.state.curCityName
+    }
+  }

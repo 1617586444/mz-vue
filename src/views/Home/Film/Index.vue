@@ -1,6 +1,6 @@
 <template>
   <div>
-
+    <div class="addr" @click="$router.push('/city')">{{curCityName}}<i class="iconfont icon-xjt" style="font-size:10px;margin-left:5px;"></i></div>
     <MzBanner></MzBanner>
     <MzTabs></MzTabs>
     <!--主体内容区-->
@@ -36,6 +36,7 @@
             <span>购票</span>
           </div>
         </router-link>
+      <p class="film-data">暂无更多数据~</p>
       </ul>
     </div>
   </div>
@@ -58,30 +59,55 @@ export default {
       FilmList: []
     };
   },
+  computed: {
+    curCityName () {
+      return this.$store.state.curCityName;
+    }
+  },
   // 调用
   created () {
-    axios
-      .get('http://localhost:3000/film/search', {
-        params: {
-          pageSize: 10
-        }
-      })
-      .then(res => {
-        var data = res.data;
-
-        if (data.code === 0) {
-          // 成功拿到数据
-          this.FilmList = data.data;
-        } else {
-          alert(data.msg);
-        }
-        // console.log(data.data);
-      });
+    axios.get('http://localhost:3000/film/search', {
+      params: {
+        pageSize: 10
+      }
+    }).then(res => {
+      var data = res.data;
+      if (data.code === 0) {
+        // 成功拿到数据
+        this.FilmList = data.data;
+      } else {
+        alert(data.msg);
+      }
+    });
   }
 };
 </script>
 
 <style lang="less">
+.addr {
+    position: absolute;
+    top: 18px;
+    left: 7px;
+    color: #fff;
+    z-index: 10;
+    font-size: 13px;
+    background: rgba(0,0,0,.2);
+    height: 30px;
+    line-height: 30px;
+    border-radius: 15px;
+    text-align: center;
+    padding: 0 5px;
+}
+.swiper-container {
+  height: 210px;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-pagination-bullet {
+    opacity: 0.8;
+  }
+}
 .film-list{
   .city-fixed{
     position: absolute;
@@ -103,12 +129,20 @@ export default {
 .goodsList {
   overflow: hidden;
   ul {
+    width: 100%;
     margin-bottom: 50px;
     float: right;
+    .film-data{
+      text-align: center;
+      font-size:12px;
+      line-height:20px;
+      color: #ccc;
+      border-bottom: none;
+    }
     .filmInfo {
-      width: 360px;
+      width: 100%;
       height: 124px;
-      padding: 15px 15px 15px 0;
+      padding: 15px;
       box-sizing: border-box;
       border-bottom: 1px solid #ccc;
     }
@@ -157,7 +191,7 @@ export default {
   margin: 0 5px 5px 5px;
 }
 .info-col {
-  height: 20px;
+  height: 22px;
   color: #797d82;
   font-size: 15px;
   line-height: 20px;

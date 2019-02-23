@@ -1,6 +1,6 @@
 <template>
   <header class="mz-header">
-    <router-link tag="div" to="/film" class="icon">×</router-link>
+    <div @click="$router.push('/film')" class="icon">×</div>
     <div class="title">
       <div>{{ title }}</div>
     </div>

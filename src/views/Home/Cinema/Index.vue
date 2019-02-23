@@ -2,7 +2,7 @@
   <div>
     <div class="header">
       <a href="#" class="address" @click="$router.push('/city')">
-        深圳
+        {{ curCityName }}
         <i class="iconfont icon-xjt" style="font-size:.08rem; margin-left:.05rem;"></i>
       </a>
       <h2>影院</h2>
@@ -52,6 +52,12 @@ export default {
       addressList: []
     };
   },
+  computed: {
+    curCityName () {
+      return this.$store.state.curCityName;
+    }
+  },
+
   created () {
     axios
       .get('http://localhost:3000/cinema/search', {
@@ -67,7 +73,7 @@ export default {
         } else {
           alert(data.msg);
         }
-        console.log(data);
+        // console.log(data);
       });
   }
 };
@@ -81,6 +87,12 @@ export default {
   justify-content: space-around;
   align-items: center;
   color: #191a1b;
+  .address {
+    width: 60px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
   a {
     color: #191a1b;
     text-decoration: none;

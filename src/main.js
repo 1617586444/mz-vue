@@ -5,7 +5,9 @@ import store from './store/index.js';
 import './assets/styles/reset.less';
 import './assets/styles/common.less';
 
-Vue.config.productionTip = false
+Vue.config.productionTip = false;
+
+store.dispatch('getCityName');
 
 new Vue({
   router,

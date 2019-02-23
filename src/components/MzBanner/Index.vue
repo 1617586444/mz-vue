@@ -1,6 +1,5 @@
 <template>
   <div>
-    <div class="addr" @click="goTo">{{curCityName}}<i class="iconfont icon-xjt" style="font-size:10px;margin-left:5px;"></i></div>
     <div class="swiper-container">
       <div class="swiper-wrapper">
         <div class="swiper-slide" v-for="item in bannerList" :key="item._id">
@@ -26,11 +25,7 @@ export default {
       mySwiper: null
     };
   },
-  computed: {
-    curCityName () {
-      return this.$store.state.curCityName;
-    }
-  },
+
   methods: {
     initSeiper () {
       // 对某个代码不校验 eslint 的规则
@@ -50,9 +45,6 @@ export default {
         }
       });
       /* eslint-disable */
-    },
-    goTo() {
-      this.$router.push("/city");
     }
   },
 
@@ -87,28 +79,4 @@ export default {
 };
 </script>
 <style lang="less">
-.addr {
-    position: absolute;
-    top: 18px;
-    left: 7px;
-    color: #fff;
-    z-index: 10;
-    font-size: 13px;
-    background: rgba(0,0,0,.2);
-    height: 30px;
-    line-height: 30px;
-    border-radius: 15px;
-    text-align: center;
-    padding: 0 5px;
-}
-.swiper-container {
-  height: 210px;
-  img {
-    width: 100%;
-    height: 100%;
-  }
-  .swiper-pagination-bullet {
-    opacity: 0.8;
-  }
-}
 </style>
