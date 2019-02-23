@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="system-body">
     <header class="system-header"><i class="iconfont icon-zuojiantou1" @click="$router.push('/center')"></i><span>设置</span></header>
     <ul class="system-ul">
       <li><p class="Identification"><span class="span-id">账号ID</span><span class="span-num">230270647</span></p></li>
