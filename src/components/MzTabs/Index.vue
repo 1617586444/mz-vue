@@ -1,11 +1,21 @@
 <template>
    <div class="main">
     <div class="main-top">
-      <a href="#">正在热映</a>
-      <a href="#">即将上映</a>
+      <a href="#" @click="fn('MzFilmListLeft')">正在热映</a>
+      <a href="#" @click="fn('MzFilmListRight')">即将上映</a>
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  methods:{
+      fn(nameId){
+        this.curPage = nameId
+      }
+    }
+}
+</script>
 
 <style lang="less">
 .main-top {

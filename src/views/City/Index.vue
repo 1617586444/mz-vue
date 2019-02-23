@@ -17,14 +17,12 @@
           <div class="hot-city">
             <div class="city-index-title">热门城市</div>
             <ul class="city-index-detail">
-              <li class="city-item-detail">
-                <div class="city-item-text">上海</div>
-              </li>
-              <li class="city-item-detail">
-                <div class="city-item-text">天津</div>
-              </li>
-              <li class="city-item-detail">
-                <div class="city-item-text">北京</div>
+              <li
+                class="city-item-detail"
+                v-for="(city,index) in idHotCity"
+                :key="index"
+              >
+                <div class="city-item-text">{{ city }}</div>
               </li>
             </ul>
           </div>
@@ -55,10 +53,10 @@
 </template>
 
 <script>
-import MzHeader from '@/components/MzHeader/Index';
+import MzHeader from "@/components/MzHeader/Index";
 // PS:  mapGetters   mapState 用在 computed 属性里面
 // mapMutations   mapActions 放在methods 里面
-import { mapState, mapGetters, mapMutations, mapActions } from 'vuex';
+import { mapState, mapGetters, mapMutations, mapActions } from "vuex";
 
 // Vuex.mapState()
 // Vuex.mapMutations()
@@ -69,54 +67,45 @@ export default {
   components: {
     MzHeader
   },
+  data() {
+    return {
+      idHotCity: ["北京", "上海", "深圳", "广州"]
+    };
+  },
   computed: {
-    ...mapState([
-      'cityData',
-      'curCityName'
-    ]),
-    ...mapState('ma', {
-      'maName': (state) => state.name
+    ...mapState(["cityData", "curCityName"]),
+    ...mapState("ma", {
+      maName: state => state.name
     }),
-    ...mapState('mb', {
-      'mbName': (state) => state.name
+    ...mapState("mb", {
+      mbName: state => state.name
     }),
-    ...mapGetters([
-      'filterCityData',
-      'filterLetters'
-    ]),
+    ...mapGetters(["filterCityData", "filterLetters"]),
 
-    mcName () {
-      return this.$store.state.mc.name
+    mcName() {
+      return this.$store.state.mc.name;
     }
-
   },
   methods: {
     // 给组件加一个方法，方法其实就是 mutaion
-    ...mapMutations([
-      'chgCityName',
-      'chgCityData'
-    ]),
-    ...mapMutations('ma', [
-      'chgName'
-    ]),
-    ...mapActions([
-      'getCityData'
-    ]),
+    ...mapMutations(["chgCityName", "chgCityData"]),
+    ...mapMutations("ma", ["chgName"]),
+    ...mapActions(["getCityData"]),
     /*
       右侧字母点击
       @param { string }  py点击的字母
     */
-    Top (py) {
-    //  得到左侧的到距离顶部的距离
+    Top(py) {
+      //  得到左侧的到距离顶部的距离
       let el = document.getElementById(py);
       // 得到， el
       // 2. 操作页面滚动条滚动
-      document.getElementById('lv-indexlist__content').scrollTop = el.offsetTop
+      document.getElementById("lv-indexlist__content").scrollTop = el.offsetTop;
     },
     /*
       切换城市
     */
-    changeCity (city) {
+    changeCity(city) {
       // this.curCityName = city.name;
       // this.$store.state.curCityName = city.name  不能这么用
       // this.$store.commit('chgCityName',city.name) 直接传参
@@ -129,16 +118,16 @@ export default {
         age: 15
       });
       // 传参完成跳转到页面
-      this.$router.push('/film');
+      this.$router.push("/film");
     }
   },
-  created () {
+  created() {
     // this.getCityData()
     // 调用仓库中的 actions
     // this.$store.dispatch('getCityData')
     this.getCityData();
   }
-}
+};
 </script>
 
 <style lang="less">

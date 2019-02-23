@@ -35,7 +35,7 @@
             <span>起</span>
           </h3>
           <p>
-            <span class="km">398.69km</span>
+            <span class="km">{{ distance }}</span>
           </p>
         </div>
       </li>
@@ -49,6 +49,7 @@ export default {
   data () {
     // 定义装载数据列表
     return {
+      distance: '距离未知',
       addressList: []
     };
   },
@@ -119,6 +120,8 @@ export default {
 .cinema-list {
   height: auto;
   .cinema-list-item {
+    display: flex;
+    justify-content:space-between;
     height: 75px;
     width: 100%;
     padding: 15px;
@@ -137,7 +140,7 @@ export default {
   }
 }
 .cinema-info-lf {
-  float: left;
+  flex: 1;
   p {
     width: 100%;
     float: left;
