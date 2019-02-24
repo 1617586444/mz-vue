@@ -1,19 +1,33 @@
 <template>
    <div class="main">
     <div class="main-top">
-      <a href="#" @click="fn('MzFilmListLeft')">正在热映</a>
-      <a href="#" @click="fn('MzFilmListRight')">即将上映</a>
+      <a href="#" @click="fn2('MzFilmListLeft')" :class="{ active: isActive }">正在热映</a>
+      <a href="#" @click="fn2('MzFilmListRight')" :class="{ active: hasError }">即将上映</a>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  methods:{
-      fn(nameId){
-        this.curPage = nameId
+  props:['name'],
+  data () {
+    return {
+      isActive: true,
+      hasError: false
+    }
+  },
+  methods: {
+    fn2 (zujianName) {
+    this.$emit('test',zujianName)
+    if ( zujianName === 'MzFilmListLeft') {
+        this.isActive = true
+       this.hasError = false
+      } else{
+       this.isActive = false
+       this.hasError = true
       }
     }
+  }
 }
 </script>
 
@@ -31,7 +45,7 @@ export default {
     box-sizing: border-box;
     text-decoration: none;
   }
-  a:nth-child(1) {
+  .active {
       color: #ff5200;
       border-bottom: 5px solid #ff5200;
   }

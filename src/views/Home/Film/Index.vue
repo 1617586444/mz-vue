@@ -5,12 +5,10 @@
       <i class="iconfont icon-xjt" style="font-size:10px;margin-left:5px;"></i>
     </div>
     <MzBanner></MzBanner>
-    <MzTabs></MzTabs>
+    <MzTabs :name="son1Name" @test="fn1"></MzTabs>
     <!--主体内容区-->
     <keep-alive>
-      <component :is="curPage"></component>
-      <!-- <MzFilmListLeft></MzFilmListLeft>
-      <MzFilmListRight></MzFilmListRight> -->
+      <component :is="son1Name" :name="son2Name" @test="fn1"></component>
     </keep-alive>
   </div>
 </template>
@@ -31,12 +29,18 @@ export default {
   },
   data () {
     return {
-      curPage: 'MzFilmListRight'
+      son1Name:'MzFilmListLeft',
+      son2Name:'MzFilmListRight',
     }
   },
   computed: {
     curCityName() {
       return this.$store.state.curCityName;
+    }
+  },
+  methods:{
+    fn1(nameId){
+      this.son1Name = nameId
     }
   }
 };
