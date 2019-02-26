@@ -49,7 +49,14 @@ export default {
   // 调用
   created () {
     axios
-      .get('https://m.maizuo.com/gateway?cityId=210300&pageNum=1&pageSize=10&type=2&k=1755331', {
+      .get('https://m.maizuo.com/gateway', {
+        params: {
+          cityId: 210300,
+          pageNum: 1,
+          pageSize: 10,
+          type: 2,
+          K: 3189258
+        },
         headers: {
           'X-Client-Info': '{"a":"3000","ch":"1002","v":"1.0.0","e":"1550840606101571681584854"}',
           'X-Host': 'mall.film-ticket.film.list'

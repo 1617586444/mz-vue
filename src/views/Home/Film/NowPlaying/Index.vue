@@ -17,20 +17,25 @@
             <span class="item" v-text="item.filmType.name">2D</span>
           </h3>
           <div class="info-col">
-            <span class="grade" >观众评分：<span style="color: #ffb232;">{{item.grade}}分</span></span>
+            <span class="grade">观众评分：
+              <span style="color: #ffb232;">{{item.grade}}分</span>
+            </span>
           </div>
           <div class="nowPlayingFilm info-col">
-            <span class="grade">主演：{{ item.director }}</span>
+            <span
+              class="grade"
+            >主演：{{ item.actors ? item.actors.map(item => item.name).join(' ') : '暂无主演' }}</span>
           </div>
           <div class="info-col">
-            <span class="label">{{ item.nation }} | 100分钟</span>
+            <span class="label">{{ item.nation }} | {{ item.runtime}}分钟</span>
           </div>
         </div>
         <div class="gp">
-          <span>预购</span>
+          <span>购票</span>
         </div>
       </router-link>
-      <p class="film-data">暂无更多数据~</p>
+      <p class="film-data" v-if="pageNum >= pages">已经没有更多电影啦~</p>
+      <center v-else @click="loadMore" style="line-height:30px; height:30px;">点击加载更多</center>
     </ul>
   </div>
 </template>
@@ -42,30 +47,65 @@ export default {
   data () {
     return {
       // 影片信息数据
-      FilmListRight: []
+      FilmListRight: [],
+      pageNum: 1,
+      total: 0,
+      pageSize: 10
+
     };
   },
 
-  // 调用
+  computed: {
+    pages () { // 一共多少页
+      return Math.ceil(this.total / this.pageSize);
+    }
+  },
   created () {
-    axios
-      .get('https://m.maizuo.com/gateway?cityId=210300&pageNum=1&pageSize=10&type=1&k=7117895', {
-        headers: {
-          'X-Client-Info': '{"a":"3000","ch":"1002","v":"1.0.0","e":"1550840606101571681584854"}',
-          'X-Host': 'mall.film-ticket.film.list'
-        }
-      })
-      .then(res => {
-        var data = res.data;
-        // console.log(data.data.films[1]);
-        if (data.status === 0) {
-          // 成功拿到数据
-          this.FilmListRight = data.data.films;
-          // console.log(data.data.films);
-        } else {
-          alert('网络有误，请稍后重试');
-        }
-      });
+    this.getFilmData()
+  },
+  // 调用
+  methods: {
+    getFilmData () {
+      axios
+        .get(
+          'https://m.maizuo.com/gateway',
+          {
+            params: {
+              cityId: 210300,
+              pageNum: this.pageNum,
+              pageSize: this.pageSize,
+              type: 1,
+              K: 4843540
+            },
+            headers: {
+              'X-Client-Info':
+                '{"a":"3000","ch":"1002","v":"1.0.0","e":"1550840606101571681584854"}',
+              'X-Host': 'mall.film-ticket.film.list'
+            }
+          }
+        )
+        .then(res => {
+          var data = res.data;
+          // console.log(data.data.films[1]);
+          if (data.status === 0) {
+            // 成功拿到数据
+            // this.FilmListRight = data.data.films;
+            // 追加 方法一
+            // this.FilmListRight.push(...data.data.films)
+            // 方法二
+            this.FilmListRight = this.FilmListRight.concat(data.data.films)
+            this.total = data.data.total; // 总条数
+          } else {
+            alert('网络有误，请稍后重试');
+          }
+        });
+    },
+
+    loadMore () {
+      this.pageNum++;
+      this.getFilmData()
+    }
+
   }
 };
 </script>

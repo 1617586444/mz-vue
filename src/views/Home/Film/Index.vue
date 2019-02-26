@@ -26,12 +26,8 @@ export default {
     curCityName () {
       return this.$store.state.curCityName;
     }
-  },
-  methods: {
-    fn1 (nameId) {
-      this.son1Name = nameId
-    }
   }
+
 };
 </script>
 
