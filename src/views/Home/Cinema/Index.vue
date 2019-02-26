@@ -61,18 +61,19 @@ export default {
 
   created () {
     axios
-      .get('http://localhost:3000/cinema/search', {
-        params: {
-          pageSize: 10
+      .get('https://m.maizuo.com/gateway?cityId=440300&k=8338347', {
+        headers: {
+          'X-Client-Info': '{"a":"3000","ch":"1002","v":"1.0.0","e":"1550840606101571681584854"}',
+          'X-Host': 'mall.film-ticket.cinema.list'
         }
       })
       .then(res => {
         var data = res.data;
-        if (data.code === 0) {
+        if (data.status === 0) {
           // 成功
-          this.addressList = data.data;
+          this.addressList = data.data.cinemas;
         } else {
-          alert(data.msg);
+          alert('网络异常，请稍后重试');
         }
         // console.log(data);
       });
