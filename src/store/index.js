@@ -18,7 +18,10 @@ let store = new Vuex.Store({
     curCityName: '',
     // 城市列表数据
     cityData: [],
-    nickName: ''
+    // 登录的ID名
+    nickName: '',
+    // 影片类型
+    filmType: 'nowPlaying'
   },
 
   getters: {
@@ -62,6 +65,9 @@ let store = new Vuex.Store({
   },
 
   mutations: {
+    chgFilmType (state, payload) {
+      state.filmType = payload;
+    },
 
     chgNickName (state, payload) {
       state.nickName = payload;

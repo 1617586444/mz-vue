@@ -1,0 +1,57 @@
+{
+  "status": 0,
+  "data": {
+    "film": {
+      "filmId": 4533,
+      "name": "阿丽塔：战斗天使",
+      "poster": "https://pic.maizuo.com/usr/movie/7903da56455b1d970bba806668d2be4d.jpg",
+      "actors": [{
+        "name": "罗伯特·罗德里格兹",
+        "role": "导演",
+        "avatarAddress": "https://pic.maizuo.com/usr/movie/d74bdbb492c3bb2076f93efde2eb70f7.jpg"
+      }, {
+        "name": " 克里斯托弗·沃尔兹",
+        "role": "戴森·艾德博士",
+        "avatarAddress": "https://pic.maizuo.com/usr/movie/8c76b219e15784d68d2cea51056012b4.jpg"
+      }, {
+        "name": "罗莎·萨拉查",
+        "role": "阿丽塔",
+        "avatarAddress": "https://pic.maizuo.com/usr/movie/231b166c3a0330d549c3a2afad748251.jpg"
+      }, {
+        "name": "基恩·约翰逊 ",
+        "role": "雨果",
+        "avatarAddress": "https://pic.maizuo.com/usr/movie/165cb4a2e42c35ee0c98286cbd08595a.jpg"
+      }, {
+        "name": "詹妮弗·康纳利",
+        "role": " 切伦",
+        "avatarAddress": "https://pic.maizuo.com/usr/movie/c0ea50ae7224aa3fb702d49f1a9e3d22.jpg"
+      }, {
+        "name": "艾德·斯克林",
+        "role": "萨曼",
+        "avatarAddress": "https://pic.maizuo.com/usr/movie/fcaa1121240ac619d2ed33de4f74830a.jpg"
+      }],
+      "director": "罗伯特·罗德里格兹",
+      "category": "动作|科幻|冒险",
+      "synopsis": "阿丽塔（罗莎·萨拉扎尔 饰）醒来发现既不记得自己是谁，也不认识这个未来世界。善良的医生依德（克里斯托夫·沃尔兹 饰）收留了阿丽塔，因为他意识到在这被遗弃的机器人外壳下，潜藏着一个有着非凡的心灵。当阿丽塔逐步适应她的新生活和钢铁城的街头险恶时，依德想试图让她远离她那神秘的过往，但她的街头朋友雨果（基恩·约翰逊 饰）则试图帮她唤起回忆。城市腐败统治者对阿丽塔展开了追捕，她却因此发现了有关过去的线索——她具有独特而强大的战斗能力。若她能够逃离他们的控制，她就能成为拯救她的朋友，家人和她所爱世界的关键。",
+      "filmType": {
+        "name": "2D",
+        "value": 1
+      },
+      "nation": "美国   加拿大 阿根廷",
+      "language": "英语   西班牙语",
+      "videoId": "XNDAzNDU0NjE1Mg==",
+      "premiereAt": 1550793600,
+      "timeType": 3,
+      "runtime": 100,
+      "photos": ["https://pic.maizuo.com/usr/100004533/554d31387fa2a3bcc1865674d200f05a.jpg", "https://pic.maizuo.com/usr/100004533/71e28eeab4db3019830821eb9a9fc81b.jpg", "https://pic.maizuo.com/usr/100004533/90f80c60c3c6c4bef7fdbd434c62fb2f.jpg", "https://pic.maizuo.com/usr/100004533/989073b5380ef7e1c75fd65729dd333c.jpg", "https://pic.maizuo.com/usr/100004533/cdddbaf3ee4e2d0a093d1cbfa454b4bb.jpg", "https://pic.maizuo.com/usr/100004533/d66cef5f98fb11364b0063db01501a4f.jpg", "https://pic.maizuo.com/usr/100004533/e09e68bf0b1b242aa09ee757f9d4e138.jpg"],
+      "grade": "7.6",
+      "item": {
+        "name": "2D",
+        "type": 1
+      },
+      "isPresale": false,
+      "isSale": true
+    }
+  },
+  "msg": "ok"
+}

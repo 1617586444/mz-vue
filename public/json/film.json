@@ -1,0 +1,357 @@
+{
+  "status": 0,
+  "data": {
+    "films": [{
+      "filmId": 4543,
+      "name": "三变山变",
+      "poster": "https://pic.maizuo.com/usr/movie/cbf43a1c4e4c9181f950045526fb0f38.jpg",
+      "director": " 彭兰玉",
+      "category": "纪录片",
+      "synopsis": "电影《三变 山变》由彭兰玉执导，以改革开放40年为大背景，用纪录电影表现手法展示六盘水市各级党委政府以责任、担当和勇气带领全市各族人民群众是怎样开启脱贫攻坚之旅的，真实再现了“资源变资产、资金变股金、农民变股东”这“三变”改革探索中的鲜活故事，记录了在以习近平总书记为核心的党中央领导下，中国农村正在发生着的翻天覆地的变化。",
+      "filmType": {
+        "name": "2D",
+        "value": 1
+      },
+      "nation": " 中国大陆",
+      "language": "汉语普通话",
+      "videoId": "",
+      "premiereAt": 1551139200,
+      "timeType": 3,
+      "runtime": 100,
+      "item": {
+        "name": "2D",
+        "type": 1
+      },
+      "isPresale": false,
+      "isSale": false
+    }, {
+      "filmId": 4563,
+      "name": "皮皮虾总裁",
+      "poster": "https://pic.maizuo.com/usr/movie/213a0b9147bf51bb4c66afb3fe0815d6.jpg",
+      "actors": [{
+        "name": "陈小雨 ",
+        "role": "导演",
+        "avatarAddress": "https://pic.maizuo.com/usr/movie/a8a646386556d330fb91056ad2c28e56.jpg"
+      }, {
+        "name": "孙苏雅 ",
+        "role": " 吴小萱",
+        "avatarAddress": "https://pic.maizuo.com/usr/movie/ff5424d6e1f1a1ef90dd484ab80d9cb2.jpg"
+      }, {
+        "name": "金阳 ",
+        "role": "范晔",
+        "avatarAddress": "https://pic.maizuo.com/usr/movie/b51ce35f6a9700c9994b29acac40fcad.jpg"
+      }],
+      "director": "陈小雨",
+      "category": "喜剧|爱情",
+      "synopsis": "吴小萱应聘酒店服务员，因不是处女座被酒店副总范晔淘汰。狮子座总经理夏冰到酒店上任，因多喝了几杯酒崴了脚伤情严重，让射手座的表妹吴小萱替她就职，吴小萱摇身一变为酒店总裁，对天蝎座的范晔展开了超级星空大战！吴小萱受到范晔质疑，却得到巨蟹座美女鉴定师韩成的力挺。金牛座保安马鸣受范晔蛊惑，绑架了韩成，韩成竟以两人星座相合溜之大吉。吴小萱身份败露，韩成展开星际救援。荒诞的星座大战，背后是人的尊严和爱情的角逐与厮杀。",
+      "filmType": {
+        "name": "2D",
+        "value": 1
+      },
+      "nation": "中国大陆",
+      "language": "汉语普通话",
+      "videoId": "",
+      "premiereAt": 1551398400,
+      "timeType": 2,
+      "runtime": 90,
+      "item": {
+        "name": "2D",
+        "type": 1
+      },
+      "isPresale": false,
+      "isSale": false
+    }, {
+      "filmId": 4537,
+      "name": "绿皮书 ",
+      "poster": "https://pic.maizuo.com/usr/movie/5cb44c8aa86c4d42ac62e708c2833908.jpg",
+      "actors": [{
+        "name": "彼得·法雷里 ",
+        "role": "导演",
+        "avatarAddress": "https://pic.maizuo.com/usr/movie/344af8ad58efab5afe9d88b64b0a92f1.jpg"
+      }, {
+        "name": "马赫沙拉·阿里",
+        "role": " Don Shirley  ",
+        "avatarAddress": "https://pic.maizuo.com/usr/movie/4580dd780007d48b19524d43eb91ca57.jpg"
+      }, {
+        "name": " 塞巴斯蒂安·马尼斯科 ",
+        "role": "Johnny Venere",
+        "avatarAddress": "https://pic.maizuo.com/usr/movie/d4d8df776bb47a7f5d0bf3f19e4cf185.jpg"
+      }, {
+        "name": "维果·莫腾森 ",
+        "role": "Tony Lip",
+        "avatarAddress": "https://pic.maizuo.com/usr/movie/665c82aa844f3d137f7986ef11c91e1f.jpg"
+      }, {
+        "name": " 琳达·卡德里尼 ",
+        "role": "Dolores",
+        "avatarAddress": "https://pic.maizuo.com/usr/movie/3284464527cd63db18259e29ac35baf3.jpg"
+      }],
+      "director": "彼得·法雷里",
+      "category": "剧情|喜剧|传记",
+      "synopsis": "一名黑人钢琴家，为前往种族歧视严重的南方巡演，找了一个粗暴的白人混混做司机。在一路开车南下的过程里，截然不同的两人矛盾不断，引发了不少争吵和笑料。但又在彼此最需要的时候，一起共渡难关。行程临近结束，两人也慢慢放下了偏见......　　绿皮书，是一本专为黑人而设的旅行指南，标注了各城市中允许黑人进入的旅店、餐馆。电影由真实故事改编。",
+      "filmType": {
+        "name": "2D",
+        "value": 1
+      },
+      "nation": "美国",
+      "language": "英语  意大利语   ",
+      "videoId": "XMzg2NDk1NjM2MA==",
+      "premiereAt": 1551398400,
+      "timeType": 3,
+      "runtime": 130,
+      "item": {
+        "name": "2D",
+        "type": 1
+      },
+      "isPresale": true,
+      "isSale": false
+    }, {
+      "filmId": 4539,
+      "name": "驯龙高手3",
+      "poster": "https://pic.maizuo.com/usr/movie/394c418ad9a14e301438176f3dd65028.jpg",
+      "actors": [{
+        "name": "迪恩·德布洛斯 ",
+        "role": "导演",
+        "avatarAddress": "https://pic.maizuo.com/usr/movie/24761dbf549294a688856e061cc483cc.jpg"
+      }, {
+        "name": "杰伊·巴鲁切尔",
+        "role": "Hiccup",
+        "avatarAddress": "https://pic.maizuo.com/usr/movie/bd08c0254b675287dfb847da48948d39.jpg"
+      }, {
+        "name": " 亚美莉卡·费雷拉",
+        "role": "Astrid",
+        "avatarAddress": "https://pic.maizuo.com/usr/movie/89d64e6ee958af82d10e0839a7411229.jpg"
+      }, {
+        "name": " 凯特·布兰切特",
+        "role": " Valka",
+        "avatarAddress": "https://pic.maizuo.com/usr/movie/67713e937bb7ba911af787af750f9c1d.jpg"
+      }],
+      "director": "迪恩·德布洛斯",
+      "category": "动画|奇幻|冒险",
+      "synopsis": "统领伯克岛的酋长嗝嗝，与阿丝翠德共同打造了一个奇妙而热闹的飞龙乌托邦。而一只雌性光煞飞龙的意外出现，加上一个前所未有的威胁的到来，令嗝嗝和没牙仔不得不离开自己唯一的家园，前往他们本以为只存在于神话之中的隐秘之境。在发现自己真正的命运之后，飞龙与骑士将携手殊死奋战，保护他们所珍爱的一切。",
+      "filmType": {
+        "name": "2D",
+        "value": 1
+      },
+      "nation": "美国",
+      "language": "英语",
+      "videoId": "XNDAyNzMwMTk2MA==",
+      "premiereAt": 1551398400,
+      "timeType": 3,
+      "runtime": 7,
+      "item": {
+        "name": "2D",
+        "type": 1
+      },
+      "isPresale": true,
+      "isSale": false
+    }, {
+      "filmId": 4554,
+      "name": "逆罪",
+      "poster": "https://pic.maizuo.com/usr/movie/dd91cd64217dd6f5b7f6549b02152def.jpg",
+      "director": "娄晶晶",
+      "category": "悬疑|惊悚",
+      "synopsis": "颠簸的小面包车外大雪纷飞，让乘客张中庆想起了三十年前他初次来到延寿村日子。那天，是他生命中爱与罪的开始......　　三十年前，他与延寿村的林含雪私定终身。私奔的途中，爱人为了保全他，甘愿被抓回，成全自己的逃脱。然而，这独自离开的一幕在林世英眼中，更像是不负责任的弃逃。他将女儿与世隔绝，隔开外人的流言蜚语。　　终于，无止境的等待，常年的禁锢与凌辱，让林含雪陷入崩溃。三十年后，就在她结束悲惨生活后不久，这辆面包车载着素不相识、但与她有千丝万缕的数人，来到了林家大宅。　　这一晚，一个关于爱情、友情、亲情的纠葛往事，在父亲、朋友与情人不同的记忆拼凑下，这出陈年的真相呼之欲出.....",
+      "filmType": {
+        "name": "2D",
+        "value": 1
+      },
+      "nation": " 中国大陆",
+      "language": "汉语普通话",
+      "videoId": "",
+      "premiereAt": 1551398400,
+      "timeType": 3,
+      "runtime": 100,
+      "item": {
+        "name": "2D",
+        "type": 1
+      },
+      "isPresale": false,
+      "isSale": false
+    }, {
+      "filmId": 4540,
+      "name": "夏目友人帐",
+      "poster": "https://pic.maizuo.com/usr/movie/87c202d4d2b7cbd9fb53171cb8424e66.jpg",
+      "actors": [{
+        "name": "井上和彦 ",
+        "role": " 猫咪老师   斑   ",
+        "avatarAddress": "https://pic.maizuo.com/usr/movie/9a6a2969214773606f12d9f5db49e401.jpg"
+      }, {
+        "name": "大森贵弘 ",
+        "role": "导演",
+        "avatarAddress": "https://pic.maizuo.com/usr/movie/c4f488959d2cb6440a699181e7a4abb6.jpg"
+      }, {
+        "name": "神谷浩史",
+        "role": "夏目贵志  ",
+        "avatarAddress": "https://pic.maizuo.com/usr/movie/b2e448e5b739fd866eb02dea526d0729.jpg"
+      }],
+      "director": "大森贵弘  伊藤秀樹",
+      "category": "剧情|/|动画|/|奇幻",
+      "synopsis": "在人与妖怪之间过着忙碌日子的夏目，偶然与以前的同学结城重逢，由此回忆起了被妖怪缠身的苦涩记忆。此时，夏目认识了在归还名字的妖怪记忆中出现的女性·津村容莉枝。和玲子相识的她，现在和独子椋雄一同过着平稳的生活。夏目通过与他们的交流，心境也变得平和。但这对母子居住的城镇，却似乎潜伏着神秘的妖怪。在调查此事归来后，寄生于猫咪老师身体的“妖之种”，在藤原家的庭院中，一夜之间就长成树结出果实。而吃掉了与自己形状相似果实的猫咪老师，竟然分裂成了3个——！？",
+      "filmType": {
+        "name": "2D",
+        "value": 1
+      },
+      "nation": "日本",
+      "language": "日语",
+      "videoId": "XNDAzNzY5MTg5Ng==",
+      "premiereAt": 1551916800,
+      "timeType": 3,
+      "runtime": 104,
+      "item": {
+        "name": "2D",
+        "type": 1
+      },
+      "isPresale": true,
+      "isSale": false
+    }, {
+      "filmId": 4530,
+      "name": "惊奇队长",
+      "poster": "https://pic.maizuo.com/usr/movie/a3c0d7453403c5aadee9c567b1d4e6b1.jpg",
+      "actors": [{
+        "name": "安娜·波顿 ",
+        "role": "导演",
+        "avatarAddress": "https://pic.maizuo.com/usr/movie/ac0684f6503de1fecc09f5dafcdcee6d.jpg"
+      }, {
+        "name": "瑞安·弗雷克",
+        "role": "导演",
+        "avatarAddress": "https://pic.maizuo.com/usr/movie/af172d39fe5f742cac9102081f634d18.jpg"
+      }, {
+        "name": " 布丽·拉尔森 ",
+        "role": "惊奇队长   卡罗尔·丹弗斯",
+        "avatarAddress": "https://pic.maizuo.com/usr/movie/039bced6b1dde52e6d1980ef36d540d6.jpg"
+      }, {
+        "name": " 麦肯娜·格瑞丝",
+        "role": "童年惊奇队长",
+        "avatarAddress": "https://pic.maizuo.com/usr/movie/84f7451d5584213bd5db6b2d27c7be6d.jpg"
+      }, {
+        "name": " 嘉玛·陈 ",
+        "role": "密涅瓦博士 ",
+        "avatarAddress": "https://pic.maizuo.com/usr/movie/d958879fb0685417d7b8b9a4250bbcea.jpg"
+      }, {
+        "name": "李·佩斯",
+        "role": "控诉者罗南",
+        "avatarAddress": "https://pic.maizuo.com/usr/movie/ddcabfcb8242c927fa0610051ddb330a.jpg"
+      }],
+      "director": "安娜·波顿  瑞安·弗雷克",
+      "category": "动作|科幻|冒险",
+      "synopsis": "漫画中的初代“惊奇女士”原名Carol Danvers，她曾经是一名美国空军情报局探员，暗恋惊奇先生。此后她得到了超能力，成为“惊奇女士”，在漫画中是非常典型的女性英雄人物。　　她可以吸收并控制任意形态的能量，拥有众多超能力。《惊奇队长》将是漫威首部以女性超级英雄为主角的电影。",
+      "filmType": {
+        "name": "2D",
+        "value": 1
+      },
+      "nation": "美国",
+      "language": "英语",
+      "videoId": "XMzk0OTA1MzYwMA==",
+      "premiereAt": 1552003200,
+      "timeType": 3,
+      "runtime": 128,
+      "item": {
+        "name": "2D",
+        "type": 1
+      },
+      "isPresale": false,
+      "isSale": false
+    }, {
+      "filmId": 4541,
+      "name": "过春天",
+      "poster": "https://pic.maizuo.com/usr/movie/3af83238b58f0f463e18452b3405355f.jpg",
+      "director": "白雪",
+      "category": "剧情",
+      "synopsis": "16岁单非家庭女孩“佩佩”，她的城市既是香港、也是深圳，一边有身份，一边有生活。为了和闺蜜的约定，为了自己的存在感，为了懵懂的好感，她内心的冲动被点燃、“水客”成为了她的另一个身份，一段颇有“冒险”感的青春故事就此开始。",
+      "filmType": {
+        "name": "2D",
+        "value": 1
+      },
+      "nation": "中国大陆",
+      "language": "汉语普通话   粤语",
+      "videoId": "XMzk3MTY5NTYxMg==",
+      "premiereAt": 1552003200,
+      "timeType": 3,
+      "runtime": 99,
+      "item": {
+        "name": "2D",
+        "type": 1
+      },
+      "isPresale": true,
+      "isSale": false
+    }, {
+      "filmId": 4551,
+      "name": "我们的爱情 ",
+      "poster": "https://pic.maizuo.com/usr/movie/f7060f9ab7673a5c9207db55bc448d1c.jpg",
+      "actors": [{
+        "name": "汪小白",
+        "role": " 导演",
+        "avatarAddress": "https://pic.maizuo.com/usr/movie/fd6258808f0a695b9d7a6d6f27ce40c1.jpg"
+      }, {
+        "name": "马卉",
+        "role": " 演员",
+        "avatarAddress": "https://pic.maizuo.com/usr/movie/e88c246da39de48f0dc33117707e3392.jpg"
+      }, {
+        "name": "戴韩安妮",
+        "role": " 演员",
+        "avatarAddress": "https://pic.maizuo.com/usr/movie/bccbe7a4eb5ee9623b5c2f7e4f35d044.jpg"
+      }],
+      "director": " 汪小白",
+      "category": "爱情",
+      "synopsis": "已婚男人何慕洋在意外邂逅女记者任梦后，坠入了爱河。妻子江欣非常伤心，何慕洋在婚姻与情感之间的纠缠也身心俱疲，事业更是遭遇了严重危机。最终任梦选择了离开，何慕洋也重新回归到了家庭。",
+      "filmType": {
+        "name": "2D",
+        "value": 1
+      },
+      "nation": "中国大陆",
+      "language": " 汉语普通话",
+      "videoId": "",
+      "premiereAt": 1552003200,
+      "timeType": 3,
+      "runtime": 100,
+      "item": {
+        "name": "2D",
+        "type": 1
+      },
+      "isPresale": false,
+      "isSale": false
+    }, {
+      "filmId": 4555,
+      "name": "似水流年",
+      "poster": "https://pic.maizuo.com/usr/movie/a074511bee55d463062369a9b44c57fd.jpg",
+      "actors": [{
+        "name": "郑君奇",
+        "role": " 导演  ",
+        "avatarAddress": "https://pic.maizuo.com/usr/movie/d7961a7cc66d93b7a618440295811379.jpg"
+      }, {
+        "name": "李龙俊",
+        "role": " 导演",
+        "avatarAddress": "https://pic.maizuo.com/usr/movie/7db375e00118fa98bae8473430055380.jpg"
+      }, {
+        "name": "初俊辰",
+        "role": "演员",
+        "avatarAddress": "https://pic.maizuo.com/usr/movie/c26174d0aefb17cc9227d0699bdf86cb.jpg"
+      }, {
+        "name": "胡琨 ",
+        "role": "演员",
+        "avatarAddress": "https://pic.maizuo.com/usr/movie/72a1f509694457d566a2b15fad114529.jpg"
+      }],
+      "director": " 郑君奇   李龙俊",
+      "category": "剧情",
+      "synopsis": "《牡丹亭》是昆曲经典剧目，其作者汤显祖更被誉为“东方的莎士比亚”，故事便发生在汤显祖写下《牡丹亭》的城市遂昌。幼时起跟随师父学习昆曲的师兄弟三人，从艺道路上屡屡受挫。一方面昆曲地位日渐衰微，戏台即将被拆除；另一方面三人与师妹的情感纠葛错综复杂，矛盾频发。三人愤而前往大城市打拼改变命运，历经挫折后在城市站稳脚跟。此时家乡却传来师父的噩耗，当他们赶回去时，一切都已面目全非，从小收养的孤儿亦与他们反目。最终三人决定回归家乡再度创业，希望重振昆曲……",
+      "filmType": {
+        "name": "2D",
+        "value": 1
+      },
+      "nation": "中国大陆",
+      "language": "汉语普通话",
+      "videoId": "",
+      "premiereAt": 1552003200,
+      "timeType": 3,
+      "runtime": 100,
+      "item": {
+        "name": "2D",
+        "type": 1
+      },
+      "isPresale": false,
+      "isSale": false
+    }],
+    "total": 24
+  },
+  "msg": "ok"
+}

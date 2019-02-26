@@ -1,53 +1,47 @@
 <template>
-   <div class="main">
-    <div class="main-top">
-      <a href="#" @click="fn2('MzFilmListLeft')" :class="{ active: isActive }">正在热映</a>
-      <a href="#" @click="fn2('MzFilmListRight')" :class="{ active: hasError }">即将上映</a>
+  <div class="tabs-bar-wrapper">
+    <div class="tabs-bar">
+      <ul class="tabs-nav">
+        <li style="width: 50%;" :class="{'active': filmType === 'nowPlaying'}" @click="go('nowPlaying')">
+          <span>正在热映</span>
+        </li>
+        <li style="width: 50%;" :class="{'active': filmType === 'ComingSoon'}" @click="go('ComingSoon')">
+          <span>即将上映</span>
+        </li>
+        <div class="tab-ink-bar-wrapper"
+          :style="[
+            {width: '50%'},
+            {transform: filmType === 'nowPlaying' ? 'translate3d(0%, 0px, 0px)' : 'translate3d(100%, 0px, 0px)' }
+          ]">
+          <span class="tab-ink-bar" style="width: 56px;"></span>
+        </div>
+      </ul>
     </div>
   </div>
 </template>
 
 <script>
+import { mapState, mapMutations } from 'vuex';
 export default {
-  props:['name'],
-  data () {
-    return {
-      isActive: true,
-      hasError: false
-    }
+  computed: {
+    ...mapState([
+      'filmType'
+    ])
   },
+
   methods: {
-    fn2 (zujianName) {
-    this.$emit('test',zujianName)
-    if ( zujianName === 'MzFilmListLeft') {
-        this.isActive = true
-       this.hasError = false
-      } else{
-       this.isActive = false
-       this.hasError = true
-      }
+    ...mapMutations([
+      'chgFilmType'
+    ]),
+
+    go (name) {
+      this.chgFilmType(name);
+      this.$router.replace('/films/' + name);
     }
   }
 }
 </script>
 
 <style lang="less">
-.main-top {
-  height: 49px;
-  display: flex;
-  justify-content: space-around;
-  border-bottom: 1px solid #ccc;
-  a {
-    display: inline-block;
-    color: #191a1b;
-    height: 49px;
-    line-height: 49px;
-    box-sizing: border-box;
-    text-decoration: none;
-  }
-  .active {
-      color: #ff5200;
-      border-bottom: 5px solid #ff5200;
-  }
-}
+@import url('./index.less');
 </style>

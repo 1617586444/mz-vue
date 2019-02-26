@@ -5,41 +5,30 @@
       <i class="iconfont icon-xjt" style="font-size:10px;margin-left:5px;"></i>
     </div>
     <MzBanner></MzBanner>
-    <MzTabs :name="son1Name" @test="fn1"></MzTabs>
-    <!--主体内容区-->
-    <keep-alive>
-      <component :is="son1Name" :name="son2Name" @test="fn1"></component>
-    </keep-alive>
+    <MzTabs></MzTabs>
+      <!-- <component :is="son1Name" :name="son2Name" @test="fn1"></component> -->
+    <!--三级路由-->
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import MzBanner from "@/components/MzBanner/Index";
-import MzTabs from "@/components/MzTabs/Index";
-import MzFilmListLeft from "@/components/MzFilmListLeft/Index";
-import MzFilmListRight from "@/components/MzFilmListRight/Index";
+import MzBanner from '@/components/MzBanner/Index';
+import MzTabs from '@/components/MzTabs/Index';
 
 export default {
   // 局部注册组件
   components: {
     MzBanner,
-    MzTabs,
-    MzFilmListLeft,
-    MzFilmListRight
-  },
-  data () {
-    return {
-      son1Name:'MzFilmListLeft',
-      son2Name:'MzFilmListRight',
-    }
+    MzTabs
   },
   computed: {
-    curCityName() {
+    curCityName () {
       return this.$store.state.curCityName;
     }
   },
-  methods:{
-    fn1(nameId){
+  methods: {
+    fn1 (nameId) {
       this.son1Name = nameId
     }
   }

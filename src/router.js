@@ -37,7 +37,21 @@ let router = new VueRouter({
         // localhost:8080/#、home/films -> City.vue
         {
           path: 'films',
-          component: () => import(/* webpackChunkName: "Film" */ './views/Home/Film/Index.vue')
+          component: () => import(/* webpackChunkName: "Film" */ './views/Home/Film/Index.vue'),
+          children: [
+            {
+              path: 'nowPlaying',
+              component: () => import('./views/Home/Film/NowPlaying/Index.vue')
+            },
+            {
+              path: 'comingSoon',
+              component: () => import('./views/Home/Film/ComingSoon/Index.vue')
+            },
+            {
+              path: '',
+              redirect: '/films/nowPlaying'
+            }
+          ]
         },
         {
           path: 'cinemas',
@@ -70,6 +84,7 @@ let router = new VueRouter({
     },
     {
       path: '/detail/:id',
+      name: 'detail',
       component: () => import(/* webpackChunkName: "detail" */ './views/Detail/Index.vue'),
       props: true
     },

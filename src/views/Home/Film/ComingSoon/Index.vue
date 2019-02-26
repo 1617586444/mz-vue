@@ -3,32 +3,31 @@
     <ul>
       <router-link
         tag="li"
-        to="/detail/100"
         class="filmInfo"
-        v-for="item in FilmList"
-        :key="item._id"
+        :to="'/detail/'+item.filmId"
+        v-for="item in FilmListRight"
+        :key="item.filmId"
       >
         <div class="filmImg">
           <img :src="item.poster">
         </div>
         <div class="filmInfo-list">
           <h3>
-            <span class="name" v-text="item.filmName">死侍2：我爱我家</span>
-            <span class="item">2D</span>
+            <span class="name" v-text="item.name">死侍2：我爱我家</span>
+            <span class="item" v-text="item.filmType.name">2D</span>
           </h3>
           <div class="info-col">
-            <span>观众评分:</span>
             <span class="grade" style="color: #ffb232;" v-text="item.grade">7.4</span>
           </div>
           <div class="nowPlayingFilm info-col">
-            <span class="grade">导演：{{ item.category }}</span>
+            <span class="grade">主演：{{ item.director }}</span>
           </div>
           <div class="info-col">
-            <span class="label">{{ item.nation }} | 119分钟</span>
+            <span class="label">上映日期：周二 2月26日</span>
           </div>
         </div>
         <div class="gp">
-          <span>购票</span>
+          <span>预购</span>
         </div>
       </router-link>
       <p class="film-data">暂无更多数据~</p>
@@ -37,31 +36,34 @@
 </template>
 
 <script>
-import axios from "axios";
+import axios from 'axios';
 
 export default {
-  data() {
+  data () {
     return {
       // 影片信息数据
-      FilmList: []
+      FilmListRight: []
     };
   },
 
   // 调用
-  created() {
+  created () {
     axios
-      .get("http://localhost:3000/film/search", {
-        params: {
-          pageSize: 10
+      .get('https://m.maizuo.com/gateway?cityId=210300&pageNum=1&pageSize=10&type=2&k=1755331', {
+        headers: {
+          'X-Client-Info': '{"a":"3000","ch":"1002","v":"1.0.0","e":"1550840606101571681584854"}',
+          'X-Host': 'mall.film-ticket.film.list'
         }
       })
       .then(res => {
         var data = res.data;
-        if (data.code === 0) {
+        // console.log(data);
+        if (data.status === 0) {
           // 成功拿到数据
-          this.FilmList = data.data;
+          this.FilmListRight = data.data.films;
+          // console.log(data.data.films);
         } else {
-          alert(data.msg);
+          alert('网络有误，请稍后重试');
         }
       });
   }

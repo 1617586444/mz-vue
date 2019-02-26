@@ -1,0 +1,419 @@
+{
+  "status": 0,
+  "data": {
+    "films": [{
+      "filmId": 4533,
+      "name": "阿丽塔：战斗天使",
+      "poster": "https://pic.maizuo.com/usr/movie/e2faa90be5a512de432b30d23398f052.jpg",
+      "actors": [{
+        "name": "罗伯特·罗德里格兹",
+        "role": "导演",
+        "avatarAddress": "https://pic.maizuo.com/usr/movie/d74bdbb492c3bb2076f93efde2eb70f7.jpg"
+      }, {
+        "name": " 克里斯托弗·沃尔兹",
+        "role": "戴森·艾德博士",
+        "avatarAddress": "https://pic.maizuo.com/usr/movie/8c76b219e15784d68d2cea51056012b4.jpg"
+      }, {
+        "name": "罗莎·萨拉查",
+        "role": "阿丽塔",
+        "avatarAddress": "https://pic.maizuo.com/usr/movie/231b166c3a0330d549c3a2afad748251.jpg"
+      }, {
+        "name": "基恩·约翰逊 ",
+        "role": "雨果",
+        "avatarAddress": "https://pic.maizuo.com/usr/movie/165cb4a2e42c35ee0c98286cbd08595a.jpg"
+      }, {
+        "name": "詹妮弗·康纳利",
+        "role": " 切伦",
+        "avatarAddress": "https://pic.maizuo.com/usr/movie/c0ea50ae7224aa3fb702d49f1a9e3d22.jpg"
+      }, {
+        "name": "艾德·斯克林",
+        "role": "萨曼",
+        "avatarAddress": "https://pic.maizuo.com/usr/movie/fcaa1121240ac619d2ed33de4f74830a.jpg"
+      }],
+      "director": "罗伯特·罗德里格兹",
+      "category": "动作|科幻|冒险",
+      "synopsis": "阿丽塔（罗莎·萨拉扎尔 饰）醒来发现既不记得自己是谁，也不认识这个未来世界。善良的医生依德（克里斯托夫·沃尔兹 饰）收留了阿丽塔，因为他意识到在这被遗弃的机器人外壳下，潜藏着一个有着非凡的心灵。当阿丽塔逐步适应她的新生活和钢铁城的街头险恶时，依德想试图让她远离她那神秘的过往，但她的街头朋友雨果（基恩·约翰逊 饰）则试图帮她唤起回忆。城市腐败统治者对阿丽塔展开了追捕，她却因此发现了有关过去的线索——她具有独特而强大的战斗能力。若她能够逃离他们的控制，她就能成为拯救她的朋友，家人和她所爱世界的关键。",
+      "filmType": {
+        "name": "2D",
+        "value": 1
+      },
+      "nation": "美国   加拿大 阿根廷",
+      "language": "英语   西班牙语",
+      "videoId": "XNDAzNDU0NjE1Mg==",
+      "premiereAt": 1550793600,
+      "timeType": 3,
+      "runtime": 100,
+      "grade": "7.6",
+      "item": {
+        "name": "2D",
+        "type": 1
+      },
+      "isPresale": true,
+      "isSale": false
+    }, {
+      "filmId": 4487,
+      "name": "流浪地球",
+      "poster": "https://pic.maizuo.com/usr/movie/bed8f7edd414e5b8afd788be30b92f9f.jpg",
+      "actors": [{
+        "name": "郭帆",
+        "role": " 导演",
+        "avatarAddress": "https://pic.maizuo.com/usr/movie/88357f5dd8a4e3736863f0dd04126b3b.jpg"
+      }, {
+        "name": "屈楚萧",
+        "role": "刘启  ",
+        "avatarAddress": "https://pic.maizuo.com/usr/movie/1b1339cc8604c304f32db9033677559d.jpg"
+      }, {
+        "name": "李光洁",
+        "role": "王磊",
+        "avatarAddress": "https://pic.maizuo.com/usr/movie/a491325a2e5f00a49f2b35c3012de6f5.jpg"
+      }, {
+        "name": "吴孟达 ",
+        "role": "演员",
+        "avatarAddress": "https://pic.maizuo.com/usr/movie/5d5b3a1abc9d72fd7f2290b6b3bd07ca.jpg"
+      }, {
+        "name": "赵今麦",
+        "role": "韩朵朵",
+        "avatarAddress": "https://pic.maizuo.com/usr/movie/d6445a73ade3293405c4c6788f6d3305.jpg"
+      }],
+      "director": "郭帆",
+      "category": "科幻",
+      "synopsis": "太阳即将毁灭，人类在地球表面建造出巨大的推进器，寻找新家园。然而宇宙之路危机四伏，为了拯救地球，为了人类能在漫长的2500年后抵达新的家园，流浪地球时代的年轻人挺身而出，展开争分夺秒的生死之战。",
+      "filmType": {
+        "name": "2D",
+        "value": 1
+      },
+      "nation": "中国大陆 ",
+      "language": "汉语普通话   英语",
+      "videoId": "XMzk0Njk2OTQxMg==",
+      "premiereAt": 1549324800,
+      "timeType": 3,
+      "runtime": 100,
+      "grade": "7.9",
+      "item": {
+        "name": "2D",
+        "type": 1
+      },
+      "isPresale": true,
+      "isSale": false
+    }, {
+      "filmId": 4492,
+      "name": "疯狂的外星人",
+      "poster": "https://pic.maizuo.com/usr/movie/669aadccddf204432c22e400226e9871.jpg",
+      "actors": [{
+        "name": "宁浩 ",
+        "role": "导演",
+        "avatarAddress": "https://pic.maizuo.com/usr/movie/2879b3e0bf1d8ac948005e3f9e4be239.jpg"
+      }, {
+        "name": "黄渤",
+        "role": " 耿浩",
+        "avatarAddress": "https://pic.maizuo.com/usr/movie/2cc525e90d5988a806d2a341fe29d42d.jpg"
+      }, {
+        "name": "沈腾 ",
+        "role": " 大飞",
+        "avatarAddress": "https://pic.maizuo.com/usr/movie/0149b2623e2197d1404a7cb7356ed477.jpg"
+      }, {
+        "name": "马修·莫里森 ",
+        "role": "演员",
+        "avatarAddress": "https://pic.maizuo.com/usr/movie/a05cfbe366e4f3ef5a41c8108a2e9836.jpg"
+      }, {
+        "name": "汤姆·派福瑞 ",
+        "role": "演员",
+        "avatarAddress": "https://pic.maizuo.com/usr/movie/1ccbf64b9323c49a3d104c2b362c4ad1.jpg"
+      }, {
+        "name": "凯特·纳尔逊 ",
+        "role": " CIA Officer",
+        "avatarAddress": "https://pic.maizuo.com/usr/movie/814ace9b6bd688245d5c6c9856a9fceb.jpg"
+      }],
+      "director": "宁浩",
+      "category": "剧情|喜剧|科幻",
+      "synopsis": "耿浩（黄渤 饰）与一心想发大财的好兄弟大飞（沈腾 饰），经营着各自惨淡的“事业”，然而“天外来客”的意外降临，打破了二人平静又拮据的生活。神秘的西方力量也派出“哼哈二将”在全球搜查外星人行踪。啼笑皆非的跨物种对决，别开生面的“星战”，在中国某海边城市激情上演。",
+      "filmType": {
+        "name": "2D",
+        "value": 1
+      },
+      "nation": "中国大陆",
+      "language": "汉语普通话",
+      "videoId": "XMzk1NjUxNTI1Mg==",
+      "premiereAt": 1549324800,
+      "timeType": 3,
+      "runtime": 100,
+      "grade": "7.6",
+      "item": {
+        "name": "2D",
+        "type": 1
+      },
+      "isPresale": true,
+      "isSale": false
+    }, {
+      "filmId": 4490,
+      "name": "飞驰人生",
+      "poster": "https://pic.maizuo.com/usr/movie/9e17a42916fe1fb80becc74736ea32ff.jpg",
+      "actors": [{
+        "name": "韩寒 ",
+        "role": "导演",
+        "avatarAddress": "https://pic.maizuo.com/usr/movie/8e6ab15d71462a761765dfb9e3d0a9ab.jpg"
+      }, {
+        "name": "沈腾",
+        "role": "张驰",
+        "avatarAddress": "https://pic.maizuo.com/usr/movie/9398cc92555e1a06b253dd73b5320440.jpg"
+      }, {
+        "name": "尹正 ",
+        "role": "演员",
+        "avatarAddress": "https://pic.maizuo.com/usr/movie/fadc73e34463640c766af0db7f785e33.jpg"
+      }, {
+        "name": "尹昉 ",
+        "role": "演员",
+        "avatarAddress": "https://pic.maizuo.com/usr/movie/63cf3e6fdded9542af4b11c51953dbdd.jpg"
+      }, {
+        "name": "田雨 ",
+        "role": "演员",
+        "avatarAddress": "https://pic.maizuo.com/usr/movie/89d89c9b7f4680cae7233b9a6be1443e.jpg"
+      }, {
+        "name": "黄景瑜",
+        "role": "林臻东",
+        "avatarAddress": "https://pic.maizuo.com/usr/movie/f43b7d72b97742905d86c6ebff752db4.jpg"
+      }],
+      "director": "韩寒",
+      "category": "喜剧|动作",
+      "synopsis": "曾经在赛车界叱咤风云、如今却只能经营炒饭大排档的赛车手张驰决定重返车坛，在职业生涯的尾声挑战年轻一代的天才，他想聚齐昔日的搭档们，召唤神龙，再现光辉岁月，不料却遭现实狠狠打脸，状况百出。在这场还得从考驾照开始的复出之路上，究竟会有多少意料之外的窘境等待着这位过气车神？",
+      "filmType": {
+        "name": "2D",
+        "value": 1
+      },
+      "nation": "中国大陆",
+      "language": "汉语普通话",
+      "videoId": "XMzg0ODg4NjYxNg==",
+      "premiereAt": 1549324800,
+      "timeType": 3,
+      "runtime": 100,
+      "grade": "7",
+      "item": {
+        "name": "2D",
+        "type": 1
+      },
+      "isPresale": true,
+      "isSale": false
+    }, {
+      "filmId": 4539,
+      "name": "驯龙高手3",
+      "poster": "https://pic.maizuo.com/usr/movie/394c418ad9a14e301438176f3dd65028.jpg",
+      "actors": [{
+        "name": "迪恩·德布洛斯 ",
+        "role": "导演",
+        "avatarAddress": "https://pic.maizuo.com/usr/movie/24761dbf549294a688856e061cc483cc.jpg"
+      }, {
+        "name": "杰伊·巴鲁切尔",
+        "role": "Hiccup",
+        "avatarAddress": "https://pic.maizuo.com/usr/movie/bd08c0254b675287dfb847da48948d39.jpg"
+      }, {
+        "name": " 亚美莉卡·费雷拉",
+        "role": "Astrid",
+        "avatarAddress": "https://pic.maizuo.com/usr/movie/89d64e6ee958af82d10e0839a7411229.jpg"
+      }, {
+        "name": " 凯特·布兰切特",
+        "role": " Valka",
+        "avatarAddress": "https://pic.maizuo.com/usr/movie/67713e937bb7ba911af787af750f9c1d.jpg"
+      }],
+      "director": "迪恩·德布洛斯",
+      "category": "动画|奇幻|冒险",
+      "synopsis": "统领伯克岛的酋长嗝嗝，与阿丝翠德共同打造了一个奇妙而热闹的飞龙乌托邦。而一只雌性光煞飞龙的意外出现，加上一个前所未有的威胁的到来，令嗝嗝和没牙仔不得不离开自己唯一的家园，前往他们本以为只存在于神话之中的隐秘之境。在发现自己真正的命运之后，飞龙与骑士将携手殊死奋战，保护他们所珍爱的一切。",
+      "filmType": {
+        "name": "2D",
+        "value": 1
+      },
+      "nation": "美国",
+      "language": "英语",
+      "videoId": "XNDAyNzMwMTk2MA==",
+      "premiereAt": 1551398400,
+      "timeType": 3,
+      "runtime": 7,
+      "item": {
+        "name": "2D",
+        "type": 1
+      },
+      "isPresale": true,
+      "isSale": false
+    }, {
+      "filmId": 4516,
+      "name": "熊出没·原始时代",
+      "poster": "https://pic.maizuo.com/usr/movie/49c597de0f21922871fa28d8f355a6b4.jpg",
+      "director": "丁亮 / 林汇达",
+      "category": "喜剧|动画|冒险",
+      "synopsis": "熊大熊二光头强意外穿越回恢宏的石器时代，在原始部落与猛犸象、剑齿虎等一众奇特 生物开启了眼界大开的奇幻之旅！原始时代瑰丽非常却又危机四伏，熊强三人组与一只可爱 狼女一路相伴，笑料百出。原始部落纠葛不断，女族长竟对光头强情愫暗生……面对凶猛狼 族的步步紧逼、原始人类的不断质疑、自然危机的全面爆发，熊强究竟何去何从？他们又能 否回归现代？一场关于守护与成长、爱与勇气的冒险，拉开序幕……",
+      "filmType": {
+        "name": "2D",
+        "value": 1
+      },
+      "nation": "中国大陆",
+      "language": "汉语普通话",
+      "videoId": "",
+      "premiereAt": 1549324800,
+      "timeType": 3,
+      "runtime": 88,
+      "grade": "7.7",
+      "item": {
+        "name": "2D",
+        "type": 1
+      },
+      "isPresale": true,
+      "isSale": false
+    }, {
+      "filmId": 4535,
+      "name": "朝花夕誓",
+      "poster": "https://pic.maizuo.com/usr/movie/4adb3df0b3540bd5fc3f0bda86ccb3f7.jpg",
+      "actors": [{
+        "name": "冈田磨里",
+        "role": " 导演",
+        "avatarAddress": "https://pic.maizuo.com/usr/movie/8ebfb1eb72fcddc2120515f56f6594a5.jpg"
+      }, {
+        "name": "筱原俊哉 ",
+        "role": "导演",
+        "avatarAddress": "https://pic.maizuo.com/usr/movie/65a063f6ca15b3549643ed08d34b3443.jpg"
+      }, {
+        "name": "入野自由 ",
+        "role": " 艾瑞尔",
+        "avatarAddress": "https://pic.maizuo.com/usr/movie/a30255491d5581e120f2731f1ca2e1e9.jpg"
+      }, {
+        "name": " 石见舞菜香",
+        "role": " 玛奇亚",
+        "avatarAddress": "https://pic.maizuo.com/usr/movie/4eea961a5dce47bf4067b15c55c7ba28.jpg"
+      }],
+      "director": " 冈田磨里  筱原俊哉",
+      "category": "动画|奇幻",
+      "synopsis": "在世界的尽头，住着一群被称为“离别一族”的古老民族：他们拥有着长寿之血和永生不老的面容。在一场外族入侵的战役中，离别一族惨遭灭族，15岁的玛奇亚虽然侥幸逃生，却彻底和朋友失去了联系。孤身一人的她在残骸中拾到了一个普通人家的遗孤，并决定收养它。然而随着时间的流逝，玛奇亚必须要学会如何做一个母亲，经历人间的生离死别，并在朝代的更迭中守护“离别一族”最后的信仰…",
+      "filmType": {
+        "name": "2D",
+        "value": 1
+      },
+      "nation": " 日本",
+      "language": "日语",
+      "videoId": "XNDAxNDgyNjI0OA==",
+      "premiereAt": 1550793600,
+      "timeType": 3,
+      "runtime": 115,
+      "grade": "7.1",
+      "item": {
+        "name": "2D",
+        "type": 1
+      },
+      "isPresale": true,
+      "isSale": false
+    }, {
+      "filmId": 4537,
+      "name": "绿皮书 ",
+      "poster": "https://pic.maizuo.com/usr/movie/5cb44c8aa86c4d42ac62e708c2833908.jpg",
+      "actors": [{
+        "name": "彼得·法雷里 ",
+        "role": "导演",
+        "avatarAddress": "https://pic.maizuo.com/usr/movie/344af8ad58efab5afe9d88b64b0a92f1.jpg"
+      }, {
+        "name": "马赫沙拉·阿里",
+        "role": " Don Shirley  ",
+        "avatarAddress": "https://pic.maizuo.com/usr/movie/4580dd780007d48b19524d43eb91ca57.jpg"
+      }, {
+        "name": " 塞巴斯蒂安·马尼斯科 ",
+        "role": "Johnny Venere",
+        "avatarAddress": "https://pic.maizuo.com/usr/movie/d4d8df776bb47a7f5d0bf3f19e4cf185.jpg"
+      }, {
+        "name": "维果·莫腾森 ",
+        "role": "Tony Lip",
+        "avatarAddress": "https://pic.maizuo.com/usr/movie/665c82aa844f3d137f7986ef11c91e1f.jpg"
+      }, {
+        "name": " 琳达·卡德里尼 ",
+        "role": "Dolores",
+        "avatarAddress": "https://pic.maizuo.com/usr/movie/3284464527cd63db18259e29ac35baf3.jpg"
+      }],
+      "director": "彼得·法雷里",
+      "category": "剧情|喜剧|传记",
+      "synopsis": "一名黑人钢琴家，为前往种族歧视严重的南方巡演，找了一个粗暴的白人混混做司机。在一路开车南下的过程里，截然不同的两人矛盾不断，引发了不少争吵和笑料。但又在彼此最需要的时候，一起共渡难关。行程临近结束，两人也慢慢放下了偏见......　　绿皮书，是一本专为黑人而设的旅行指南，标注了各城市中允许黑人进入的旅店、餐馆。电影由真实故事改编。",
+      "filmType": {
+        "name": "2D",
+        "value": 1
+      },
+      "nation": "美国",
+      "language": "英语  意大利语   ",
+      "videoId": "XMzg2NDk1NjM2MA==",
+      "premiereAt": 1551398400,
+      "timeType": 3,
+      "runtime": 130,
+      "item": {
+        "name": "2D",
+        "type": 1
+      },
+      "isPresale": true,
+      "isSale": false
+    }, {
+      "filmId": 4491,
+      "name": "新喜剧之王",
+      "poster": "https://pic.maizuo.com/usr/movie/39870649a759faafd3cf4111bb347b9c.jpg",
+      "actors": [{
+        "name": "周星驰 ",
+        "role": "导演",
+        "avatarAddress": "https://pic.maizuo.com/usr/movie/75a4d2507f44499c096b45ab0beda7b2.jpg"
+      }, {
+        "name": "王宝强",
+        "role": " 演员",
+        "avatarAddress": "https://pic.maizuo.com/usr/movie/d51401414fd0c50f6de2af57b51bfb3c.jpg"
+      }],
+      "director": "周星驰",
+      "category": "剧情|喜剧",
+      "synopsis": "周星驰2019春节档新作，回归小人物喜剧，重新聚焦在平凡生活中不甘平凡的人。“七大武器之首”折凳再现江湖，原汁原味走心加接地气，纯搞笑风格的周星驰式喜剧，大年初一上映。",
+      "filmType": {
+        "name": "2D",
+        "value": 1
+      },
+      "nation": "中国大陆   香港",
+      "language": " 汉语普通话   粤语",
+      "videoId": "",
+      "premiereAt": 1549324800,
+      "timeType": 3,
+      "runtime": 100,
+      "grade": "7",
+      "item": {
+        "name": "2D",
+        "type": 1
+      },
+      "isPresale": true,
+      "isSale": false
+    }, {
+      "filmId": 4534,
+      "name": "一吻定情 ",
+      "poster": "https://pic.maizuo.com/usr/movie/538c23218a292bb9155f216eaba8e8dc.jpg",
+      "actors": [{
+        "name": "陈玉珊",
+        "role": " 导演",
+        "avatarAddress": "https://pic.maizuo.com/usr/movie/555587b6a9e92cf80ac3b8cf80183fc0.jpg"
+      }, {
+        "name": "林允",
+        "role": "袁湘琴",
+        "avatarAddress": "https://pic.maizuo.com/usr/movie/e05da3e63cd10a86cca3750b89645b1c.jpg"
+      }, {
+        "name": "王大陆 ",
+        "role": "江直树",
+        "avatarAddress": "https://pic.maizuo.com/usr/movie/0ad913cbbd4bf15c11056c9fb2bf8e92.jpg"
+      }],
+      "director": " 陈玉珊",
+      "category": "喜剧|爱情",
+      "synopsis": "笨蛋爱上天才，会有结果吗？平凡女孩原湘琴（林允饰）喜欢上了天才少年江直树（王大陆饰），在她表白失败准备放弃之际，爸爸居然带着自己搬进了直树家里？！一个猛追，一个猛逃，热闹欢腾的纯真高中生活就此上演。朝夕相处中，直树渐渐被湘琴乐观的无畏精神吸引，他开始怀疑：湘琴究竟是人生偏差、还是自己的命中注定?",
+      "filmType": {
+        "name": "2D",
+        "value": 1
+      },
+      "nation": " 中国大陆",
+      "language": "汉语普通话",
+      "videoId": "XNDAyODYxMzA3Mg==",
+      "premiereAt": 1550102400,
+      "timeType": 3,
+      "runtime": 100,
+      "grade": "7.4",
+      "item": {
+        "name": "2D",
+        "type": 1
+      },
+      "isPresale": true,
+      "isSale": false
+    }],
+    "total": 26
+  },
+  "msg": "ok"
+}
