@@ -1,4 +1,5 @@
 module.exports = {
+  publicPath: '/mz/',
   devServer: {
     /**
      * 字符串模式

@@ -2,7 +2,14 @@
 <template>
   <div>
     <!-- 这里要有个坑。去现实 film ciema center -->
+    <transition
+      appear
+      mode="out-in"
+      enter-active-class="animated bounceInUp faster"
+      leave-active-class="animated bounceOutDown faster"
+      >
     <router-view></router-view>
+    </transition>
     <MzFooter></MzFooter>
   </div>
 </template>

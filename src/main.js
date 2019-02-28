@@ -6,6 +6,8 @@ import './assets/styles/reset.less';
 import './assets/styles/common.less';
 import './mockData';
 
+// console.log(process.env.NODE_ENV);
+
 Vue.config.productionTip = false;
 
 store.dispatch('getCityName');

@@ -25,8 +25,8 @@
         <router-link tag="p" to="/money" class="my-card">
           <i class="iconfont icon-yue"></i>
           <span>余额</span>
-          <span class="yjt"><i class="iconfont icon-iconfontjiantou5"></i></span>
-          <span class="perve">￥{{ initMoney }}.00</span>
+            <span class="yjt"><i class="iconfont icon-iconfontjiantou5"></i></span>
+            <span class="perve">￥{{ initMoney }}.00</span>
         </router-link>
         <router-link tag="p" to="/system" class="my-card">
           <i class="iconfont icon-shezhi"></i>
