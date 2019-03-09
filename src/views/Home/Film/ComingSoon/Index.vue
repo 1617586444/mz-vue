@@ -51,7 +51,7 @@ export default {
     axios
       .get('https://m.maizuo.com/gateway', {
         params: {
-          cityId: this.$store.state.curCityId,
+          cityId: this.$store.state.curCityId || 440300,
           pageNum: 1,
           pageSize: 10,
           type: 2,

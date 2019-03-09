@@ -129,6 +129,7 @@ export default {
   border-bottom: 1px solid #ccc;
   line-height: 49px;
   padding: 0 10px;
+  font-size: 15px;
   i {
     margin-left: 10px;
   }

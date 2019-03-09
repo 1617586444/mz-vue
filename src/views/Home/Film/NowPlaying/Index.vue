@@ -72,7 +72,7 @@ export default {
           'https://m.maizuo.com/gateway',
           {
             params: {
-              cityId: this.cityId,
+              cityId: this.cityId || 440300,
               pageNum: this.pageNum,
               pageSize: this.pageSize,
               type: 1,

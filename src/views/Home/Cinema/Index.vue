@@ -94,6 +94,7 @@ export default {
   justify-content: space-around;
   align-items: center;
   color: #191a1b;
+  font-size: 18px;
   .address {
     width: 60px;
     overflow: hidden;
@@ -117,6 +118,7 @@ export default {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  font-size:16px;
   a {
     color: #191a1b;
     text-decoration: none;
