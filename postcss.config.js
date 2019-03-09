@@ -2,7 +2,7 @@ module.exports = {
   plugins: {
     autoprefixer: {},
     'postcss-pxtorem': {
-      rootValue: 16,
+      rootValue: 20,
       unitPrecision: 5,
       // 需要转换的css 属性
       propList: ['*'],

@@ -50,18 +50,23 @@ export default {
     // 定义装载数据列表
     return {
       distance: '距离未知',
-      addressList: []
+      addressList: [],
+      newId: this.$store.state.curCityId
     };
   },
   computed: {
     curCityName () {
       return this.$store.state.curCityName;
     }
-  },
 
+  },
   created () {
     axios
-      .get('https://m.maizuo.com/gateway?cityId=440300&k=8338347', {
+      .get('https://m.maizuo.com/gateway', {
+        params: {
+          cityId: this.newId || 440300,
+          k: 8338347
+        },
         headers: {
           'X-Client-Info': '{"a":"3000","ch":"1002","v":"1.0.0","e":"1550840606101571681584854"}',
           'X-Host': 'mall.film-ticket.cinema.list'

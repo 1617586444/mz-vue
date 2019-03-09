@@ -6,7 +6,6 @@
     </div>
     <MzBanner></MzBanner>
     <MzTabs></MzTabs>
-      <!-- <component :is="son1Name" :name="son2Name" @test="fn1"></component> -->
     <!--三级路由-->
     <router-view></router-view>
   </div>

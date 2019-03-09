@@ -12,10 +12,10 @@
           <img :src="item.poster">
         </div>
         <div class="filmInfo-list">
-          <h3>
+          <p>
             <span class="name" v-text="item.name">死侍2：我爱我家</span>
             <span class="item" v-text="item.filmType.name">2D</span>
-          </h3>
+          </p>
           <div class="info-col">
             <span class="grade" style="color: #ffb232;" v-text="item.grade">7.4</span>
           </div>
@@ -51,7 +51,7 @@ export default {
     axios
       .get('https://m.maizuo.com/gateway', {
         params: {
-          cityId: 210300,
+          cityId: this.$store.state.curCityId,
           pageNum: 1,
           pageSize: 10,
           type: 2,
@@ -113,6 +113,7 @@ export default {
   }
 }
 .filmInfo-list {
+  font-size: 18px;
   width: 218px;
   height: 100%;
   float: left;

@@ -50,7 +50,8 @@ export default {
       FilmListRight: [],
       pageNum: 1,
       total: 0,
-      pageSize: 10
+      pageSize: 10,
+      cityId: this.$store.state.curCityId
 
     };
   },
@@ -71,7 +72,7 @@ export default {
           'https://m.maizuo.com/gateway',
           {
             params: {
-              cityId: 440300,
+              cityId: this.cityId,
               pageNum: this.pageNum,
               pageSize: this.pageSize,
               type: 1,

@@ -38,7 +38,7 @@
             <li
               v-for="city in item.list"
               :key="city.cityId"
-              @click="changeCity(city)"
+              @click="changeCity(city,city.cityId)"
             >{{ city.name }}</li>
           </ul>
         </li>
@@ -105,7 +105,7 @@ export default {
     /*
       切换城市
     */
-    changeCity (city) {
+    changeCity (city, id) {
       // this.curCityName = city.name;
       // this.$store.state.curCityName = city.name  不能这么用
       // this.$store.commit('chgCityName',city.name) 直接传参
@@ -113,8 +113,10 @@ export default {
       //   name: city.name,
       //   age: 18
       // });
+      // console.log(id);
       this.chgCityName({
         name: city.name,
+        id: id,
         age: 15
       });
       // 传参完成跳转到页面

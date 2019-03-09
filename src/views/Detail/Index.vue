@@ -5,9 +5,8 @@
         <i class="iconfont icon-zuojiantou1"></i>
       </div>
       <div class="lazy-img">
-        <img
-          src="https://pic.maizuo.com/usr/movie/7903da56455b1d970bba806668d2be4d.jpg?x-oss-process=image/quality,Q_70"
-          alt
+        <img :src="detailInfo.poster"
+          alt=""
         >
       </div>
     </div>
@@ -18,7 +17,7 @@
           <span class="item">2D</span>
         </div>
         <div class="film-grade">
-          <span class="grade">7.6</span>
+          <span class="grade">{{detailInfo.grade}}</span>
           <span class="grade-text">分</span>
         </div>
       </div>
@@ -111,23 +110,32 @@ export default {
   data () {
     return {
       // 影片详情信息
-      detailInfo: []
+      detailInfo: {},
+      img: ''
     };
   },
   // 调用
   created () {
+    // url 上面带进来的id
+    let id = this.id;
     axios
-      .get('./json/detail.json')
+      .get('https://m.maizuo.com/gateway', {
+        params: {
+          filmId: id,
+          K: 4888082
+        },
+        headers: {
+          'X-Client-Info':
+                '{"a":"3000","ch":"1002","v":"1.0.0","e":"1550840606101571681584854"}',
+          'X-Host': 'mall.film-ticket.film.info'
+        }
+      })
       .then(res => {
-        var data = res.data;
-        console.log(data);
-        if (data.status === 0) {
+        if (status === '0') {
+        // console.log(res.data.data);
           // 成功拿到数据
-          this.detailInfo = data.data.film;
-          // console.log(this.id);
-          // console.log(this.detailInfo.filmId);
-
-          // console.log(obj);
+          this.detailInfo = res.data.data.film;
+          // console.log(this.detailInfo);
         } else {
           alert('网络有误，请稍后重试');
         }

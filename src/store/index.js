@@ -16,6 +16,8 @@ let store = new Vuex.Store({
   state: {
     // 当前定位or切换的城市名称
     curCityName: '',
+    // 当前城市的id
+    curCityId: '440300',
     // 城市列表数据
     cityData: [],
     // 登录的ID名
@@ -80,6 +82,7 @@ let store = new Vuex.Store({
     */
     chgCityName (state, payload) {
       state.curCityName = payload.name;
+      state.curCityId = payload.id;
     },
 
     /*
@@ -100,7 +103,8 @@ let store = new Vuex.Store({
       var myCity = new BMap.LocalCity();
       myCity.get( (result) => {
         commit('chgCityName', {
-          name: result.name
+          name: result.name,
+
         })
       })
     },
@@ -112,15 +116,12 @@ let store = new Vuex.Store({
         let res = response.data;
         if (res.status === 0) {
           // 成功
-          // this.cityData = res.data.cities;
-          // this.$store.commit('chgCityData', res.data.cities);
-          // this.chgCityData(res.data.cities)
+          console.log(this.cityId);
           commit('chgCityData', res.data.cities)
         } else {
           // 失败
           alert(res.msg)
         }
-        // console.log(res);
       })
     },
   },
